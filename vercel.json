@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/cybersecurity-awareness-2026.html" }
+  ]
+}
