@@ -3,5 +3,5 @@
 *.docx
 ~$*
 .txt
-assets/cybersecurity-awareness.html
-assets/cybersecurity-awareness-blue.html
+cybersecurity-awareness.html
+cybersecurity-awareness-blue.html
