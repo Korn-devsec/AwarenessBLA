@@ -1,0 +1,7 @@
+.DS_Store
+.claude/
+*.docx
+~$*
+.txt
+assets/cybersecurity-awareness.html
+assets/cybersecurity-awareness-blue.html
