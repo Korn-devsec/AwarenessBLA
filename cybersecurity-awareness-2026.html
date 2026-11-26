@@ -177,7 +177,7 @@ h2 em { font-style: normal; color: var(--red); }
 .s-title .disc { position: absolute; right: 160px; top: 170px; width: 520px; height: 520px; border-radius: 50%; background: var(--red); }
 .s-title .ring { position: absolute; right: 40px; top: 470px; width: 360px; height: 360px; border-radius: 50%; border: 3px solid var(--ink); }
 .s-title h1 { position: absolute; left: 112px; top: 330px; font: 900 172px/.92 var(--display); letter-spacing: -.04em; color: var(--ink); }
-.s-title h1 > span:not(.ch) { color: var(--red); }
+.s-title h1 > span:not(.ch):not(.wd) { color: var(--red); }
 .s-title .th { position: absolute; left: 120px; top: 720px; font: 700 64px/1.3 var(--body); color: var(--ink); }
 .s-title .sub { position: absolute; left: 120px; top: 820px; font: 400 32px/1.5 var(--body); color: var(--muted); }
 
@@ -381,7 +381,7 @@ h2 em { font-style: normal; color: var(--red); }
 .s-close .disc { position: absolute; right: -160px; top: -160px; width: 760px; height: 760px; border-radius: 50%; background: var(--red); }
 .s-close .ring { position: absolute; right: 360px; top: 400px; width: 300px; height: 300px; border-radius: 50%; border: 3px solid var(--ink); }
 .s-close h1 { position: absolute; left: 112px; top: 300px; font: 700 180px/1.25 var(--body); color: var(--ink); }
-.s-close h1 > span:not(.ch) { color: var(--red); }
+.s-close h1 > span:not(.ch):not(.wd) { color: var(--red); }
 .s-close .q { position: absolute; left: 120px; top: 560px; font: 900 72px var(--display); letter-spacing: -.03em; color: var(--ink); }
 .s-close .refs { position: absolute; left: 120px; top: 730px; font: 400 24px/1.7 var(--body); color: var(--muted); }
 .s-close .refs .brand { display: block; margin-top: 4px; font: 900 64px/1.1 var(--display); letter-spacing: -.03em; color: var(--ink); }
@@ -625,7 +625,7 @@ h2 em, .statement em { color: var(--red); text-shadow: 0 0 48px rgba(51, 169, 24
 
 /* --- Pre-test / Post-test --- */
 .s-test h1 { position: absolute; left: 112px; top: 250px; font: 900 190px/.95 var(--display); letter-spacing: -.04em; color: var(--ink); }
-.s-test h1 > span:not(.ch) { color: var(--red); }
+.s-test h1 > span:not(.ch):not(.wd) { color: var(--red); }
 .s-test .th { position: absolute; left: 120px; top: 500px; font: 700 60px/1.3 var(--body); color: var(--ink); }
 .s-test .sub { position: absolute; left: 120px; top: 600px; width: 920px; font: 400 30px/1.6 var(--body); color: var(--muted); }
 .s-test .how { position: absolute; left: 120px; top: 760px; display: flex; gap: 18px; align-items: center; font: 600 28px var(--body); color: var(--ink); }
@@ -699,6 +699,359 @@ h2 em, .statement em { color: var(--red); text-shadow: 0 0 48px rgba(51, 169, 24
 .thai .stat b small { font-size: 44px; font-family: var(--body); font-weight: 700; margin-left: 14px; letter-spacing: 0; }
 .thai .stat span { font-size: 27px; }
 .src { margin-top: auto; font: 400 20px/1.5 var(--body); color: var(--muted); }
+
+/* ===========================================
+   V3 EDITION — content follows BLA_Cyber_Security_Awareness_2026_v3.pptx
+   New components: cards, kpis, illustrations, email mock-ups
+   =========================================== */
+:root { --ok: #2fd18a; --amber: #ffb547; }
+.frame > h2 { font-size: 60px; line-height: 1.28; }
+.wd { display: inline-block; white-space: nowrap; }
+.frame.withill { right: calc(var(--pad) + 620px); }
+.frame.withill.w { right: calc(var(--pad) + 820px); }
+.v3src { margin-top: auto; padding-top: 18px; font: 400 20px/1.5 var(--body); color: var(--muted); }
+.lead { margin-top: 10px; }
+
+/* --- Title (v3) --- */
+.s-title.v3 h1 { top: 190px; font-size: 104px; line-height: .98; }
+.s-title.v3 .th { top: 640px; font-size: 50px; }
+.s-title.v3 .sub { top: 728px; }
+.s-title.v3 .by { position: absolute; left: 120px; top: 800px; font: 700 30px var(--display); letter-spacing: .06em; color: var(--red-2); }
+
+/* --- Illustrations --- */
+.ill { position: absolute; right: var(--pad); top: 190px; bottom: 150px; width: 560px; border-radius: 28px; overflow: hidden;
+       border: 1px solid rgba(255,255,255,.12); box-shadow: 0 40px 120px -40px var(--glow); }
+.ill img, .opener-ill img { width: 100%; height: 100%; max-width: none; max-height: none; object-fit: cover; display: block; }
+.ill.land { top: 300px; bottom: auto; width: 760px; height: 428px; }
+.ill.sq { top: 230px; bottom: auto; width: 560px; height: 560px; }
+.opener-ill { position: absolute; right: 120px; top: 140px; width: 600px; height: 800px; border-radius: 32px; overflow: hidden;
+              border: 1px solid rgba(255,255,255,.12); box-shadow: 0 50px 140px -40px var(--glow); }
+.opener-ill.close { width: 520px; height: 700px; top: 170px; }
+.v3-open .opener-title { top: 500px; width: 1000px; }
+.v3-open .opener-title h2 { font-size: 80px; line-height: 1.22; }
+.s-close .ring { display: none; }
+
+/* --- Speaker --- */
+.spk { margin-top: 36px; flex: 1; display: grid; grid-template-columns: 420px 1fr; gap: 80px; }
+.spk-photo { align-self: start; height: 560px; border-radius: 28px; overflow: hidden; background: linear-gradient(180deg, #dfe8f5, #a9c4e6);
+             border: 1px solid rgba(255,255,255,.2); box-shadow: 0 40px 120px -40px var(--glow); }
+.spk-photo img { width: 100%; height: 100%; max-width: none; max-height: none; object-fit: cover; object-position: top; display: block; }
+.spk-name { font: 700 52px/1.2 var(--body); color: var(--ink); }
+.spk-role { margin-top: 8px; font: 500 28px/1.4 var(--display); color: var(--red-2); }
+.spk .chips { margin-top: 26px; gap: 12px; }
+.spk .chips span { font-size: 22px; padding: 8px 18px; }
+.spk .blist { margin-top: 26px; }
+
+/* --- Agenda (labels instead of times) --- */
+.v3ag li { grid-template-columns: 120px 1fr !important; font-size: 32px !important; }
+.v3ag li span { font-family: var(--body) !important; font-weight: 800 !important; }
+
+/* --- Pre-test extras --- */
+.s-test .how b { width: auto; min-width: 46px; padding: 0 10px; border-radius: 23px; }
+.s-test .hint { position: absolute; left: 120px; top: 850px; font: 400 30px var(--body); color: var(--muted); }
+.s-test .qr.img { border: 0; background: #fff; padding: 30px; border-radius: 24px; box-shadow: 0 40px 120px -30px var(--glow); }
+.s-test .qr.img img { width: 100%; height: 100%; display: block; }
+
+/* --- Cards --- */
+.cards { margin-top: 44px; display: grid; gap: 30px; grid-template-columns: repeat(var(--c, 2), 1fr); }
+.cards.tall { flex: 1; }
+.card { position: relative; background: rgba(10, 22, 48, .78); border: 1px solid rgba(255,255,255,.1); padding: 32px 36px;
+        display: flex; flex-direction: column; gap: 12px; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.card::before { content: ''; position: absolute; left: 0; top: 0; right: 0; height: 4px; background: var(--red); }
+.card .n { font: 800 22px var(--display); letter-spacing: .1em; color: var(--red); }
+.card h3 { font: 700 36px/1.3 var(--body); color: var(--ink); }
+.card h3.en { font-family: var(--display); font-weight: 900; letter-spacing: -.01em; }
+.card p { font: 400 27px/1.5 var(--body); color: var(--ink-2); }
+.card p.muted, .muted { color: var(--muted); }
+.card ul { list-style: none; display: grid; gap: 14px; margin-top: 8px; }
+.card li { display: flex; gap: 16px; align-items: baseline; font: 400 28px/1.45 var(--body); color: var(--ink-2); }
+.card li::before { content: ''; flex: none; width: 10px; height: 10px; background: var(--red); transform: translateY(-5px); }
+.card li b { color: var(--ink); }
+.card.warn::before { background: var(--danger); }
+.card.warn .n, .card.warn h3 { color: #ff8a96; }
+.card.warn li::before { background: var(--danger); }
+.card.ok::before { background: var(--ok); }
+.card.ok .n, .card.ok h3 { color: var(--ok); }
+.card.ok li::before { background: var(--ok); }
+.card.un::before { background: var(--amber); }
+.card.un .n, .card.un h3 { color: var(--amber); }
+.card.un li::before { background: var(--amber); }
+.cards.big .card h3 { font-size: 46px; }
+.cards.big .card p { font-size: 30px; }
+.cards.big { flex: 1; }
+.cards.sm .card { padding: 26px 30px; }
+.cards.sm .card h3 { font-size: 31px; }
+.cards.sm .card p { font-size: 25px; }
+.cards.x .card h3 { font-size: 34px; }
+.cards.split .card p { font: 500 26px var(--display); color: var(--muted); }
+.cards.vote3 .card h3 { font-size: 52px; }
+.cards.big3 .card h3 { font-size: 48px; }
+.ph { color: var(--amber); font-weight: 600; }
+
+/* --- KPIs --- */
+.kpis { margin-top: 40px; flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px 48px; }
+.kpi { border-top: 3px solid var(--red); padding-top: 18px; display: flex; flex-direction: column; }
+.kpi b { font: 900 84px/1 var(--display); color: var(--red); letter-spacing: -.03em; text-shadow: 0 0 40px rgba(51,169,240,.35); }
+.kpi b.thb { font-family: var(--body); font-weight: 700; font-size: 76px; }
+.kpi span { margin-top: 14px; font: 500 27px/1.45 var(--body); color: var(--ink); }
+.kpi small { margin-top: auto; padding-top: 12px; font: 700 19px var(--display); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.kpi.row { margin-top: 34px; display: grid; grid-template-columns: auto; border-top-width: 2px; }
+.kpi.row b { font-size: 92px; }
+.kpis.k3 { flex: none; margin-top: 48px; }
+.kpis.k3 .kpi b { font-size: 80px; font-family: var(--display); }
+
+/* Thailand slide */
+.th9 { margin-top: 36px; display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; }
+.th9 .hero .kpi { border: 0; padding: 0; margin-top: 6px; }
+.th9 .hero .kpi b { font-size: 120px; }
+.th9 .hero .big { font: 600 34px/1.45 var(--body); color: var(--ink); }
+.th9 .hero .peak { margin-top: auto; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.14); font: 500 26px/1.45 var(--body); color: var(--amber); }
+.th9r { display: grid; gap: 4px; align-content: start; }
+.th9r .kpi.row { margin-top: 0; margin-bottom: 26px; }
+.th9r .kpi.row b { font-size: 68px; }
+.th9r .kpi.row span { font-size: 25px; margin-top: 8px; }
+
+/* --- Bullet list --- */
+.blist { margin-top: 40px; list-style: none; }
+.blist li { display: grid; grid-template-columns: 44px 1fr; padding: 24px 0; border-top: 1px solid rgba(255,255,255,.14); font: 400 31px/1.5 var(--body); color: var(--ink-2); }
+.blist li:last-child { border-bottom: 1px solid rgba(255,255,255,.14); }
+.blist li::before { content: ''; width: 14px; height: 14px; margin-top: 17px; background: var(--red); box-shadow: 0 0 14px var(--glow); }
+.blist li b { color: var(--ink); font-weight: 700; }
+.blist.tight li { padding: 16px 0; font-size: 28px; }
+.blist.tight li::before { margin-top: 15px; }
+.blist.grid2 { display: grid; grid-template-columns: 1fr 1fr; column-gap: 64px; }
+.blist.grid2 li:nth-last-child(2) { border-bottom: 1px solid rgba(255,255,255,.14); }
+
+/* --- Callout --- */
+.callout { margin-top: 30px; padding: 24px 32px; background: var(--red-soft); border-left: 6px solid var(--red); font: 500 29px/1.5 var(--body); color: var(--ink); }
+.callout b { color: var(--red-2); }
+.callout.warn { background: rgba(255,77,94,.1); border-left-color: var(--danger); }
+.callout.warn b { color: #ff8a96; }
+.pill { align-self: flex-start; margin-top: 30px; padding: 10px 22px; border: 1px solid rgba(51,169,240,.5); background: var(--red-soft); font: 600 26px var(--body); color: var(--red-2); }
+
+/* --- Passwords --- */
+.pwpair { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+.pwpair code { font: 800 46px var(--display); letter-spacing: .01em; color: var(--ink); }
+.pwpair .warn code { color: #ff8a96; text-decoration: line-through; text-decoration-thickness: 3px; }
+.pwpair .ok code { color: var(--ok); }
+
+/* Password reuse flow */
+.reuse { margin-top: 50px; display: grid; grid-template-columns: 1fr 60px 1fr 60px 1.1fr 60px 1.2fr; align-items: center; }
+.reuse > i { font-style: normal; text-align: center; font: 900 40px var(--display); color: var(--red); }
+.node { padding: 26px 24px; text-align: center; background: rgba(10, 22, 48, .78); border: 1px solid rgba(255,255,255,.14); font: 600 29px/1.35 var(--body); color: var(--ink); }
+.node.bad { border-color: rgba(255,77,94,.55); background: rgba(255,77,94,.1); color: #ffc6cc; }
+.node.big b { display: block; margin-top: 6px; font-size: 34px; color: #ff8a96; }
+.stack { display: grid; gap: 12px; }
+.stack .node { padding: 16px 20px; font-size: 26px; }
+.card.pm { margin-top: 44px; }
+.card.pm h3 { font-size: 42px; }
+
+/* Lock screen */
+.lockbox { margin-top: 36px; padding: 28px 32px; background: rgba(10, 22, 48, .78); border: 1px solid rgba(255,255,255,.12); display: grid; gap: 18px; }
+.lockbox h3 { font: 700 38px var(--body); color: var(--red-2); }
+.combo { display: flex; align-items: center; gap: 14px; }
+.combo .os { width: 150px; font: 700 26px var(--display); color: var(--muted); }
+.combo em { font-style: normal; font: 900 28px var(--display); color: var(--muted); }
+.kbd { display: inline-grid; place-items: center; min-width: 64px; height: 60px; padding: 0 18px; border-radius: 12px; border: 2px solid rgba(255,255,255,.35);
+       border-bottom-width: 6px; background: var(--surface-2); font: 800 25px var(--display); color: var(--ink); }
+
+/* 3-2-1 */
+.b321 { margin-top: 44px; flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; }
+.b321 .card b { font: 900 200px/.9 var(--display); color: var(--red); letter-spacing: -.05em; text-shadow: 0 0 60px rgba(51,169,240,.45); }
+.b321 .card h3 { font-size: 44px; }
+
+/* Data classification table */
+.tbl { margin-top: 44px; width: 100%; border-collapse: collapse; }
+.tbl th { text-align: left; padding: 16px 28px; font: 700 24px var(--body); color: var(--muted); border-bottom: 3px solid var(--red); }
+.tbl td { padding: 30px 28px; border-bottom: 1px solid rgba(255,255,255,.12); font: 400 30px/1.45 var(--body); color: var(--ink-2); vertical-align: top; }
+.tbl td:first-child { width: 330px; font: 700 34px/1.25 var(--body); color: var(--ink); border-left: 6px solid var(--lv); }
+.tbl td:first-child small { display: block; margin-top: 4px; font: 700 20px var(--display); letter-spacing: .12em; text-transform: uppercase; color: var(--lv); }
+.tbl tr.l1 { --lv: var(--ok); } .tbl tr.l2 { --lv: var(--red); } .tbl tr.l3 { --lv: var(--amber); } .tbl tr.l4 { --lv: var(--danger); }
+.tbl tr.l4 td { background: rgba(255,77,94,.06); }
+
+/* AI phishing compare */
+.vs { margin-top: 40px; flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.vs q { display: block; quotes: '“' '”'; padding: 22px 26px; background: rgba(255,255,255,.05); border-left: 5px solid rgba(255,255,255,.3); font: 400 29px/1.6 var(--body); color: var(--ink); }
+.vs .warn q { border-left-color: var(--danger); }
+.vs p { margin-top: auto; }
+
+/* Ext chips */
+.exts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px; }
+.exts span { padding: 8px 16px; border: 1px solid rgba(255,77,94,.5); background: rgba(255,77,94,.1); font: 700 25px var(--display); color: #ffc6cc; }
+
+/* MFA factors */
+.factors { margin-top: 60px; display: grid; grid-template-columns: 1fr 80px 1fr 80px 1fr; align-items: stretch; }
+.factors > i { font-style: normal; display: grid; place-items: center; font: 900 64px var(--display); color: var(--red); }
+.factors .card { padding: 40px 40px 46px; }
+.factors .card h3 { font-size: 48px; }
+.factors .card p { font-size: 32px; }
+.rung .lvl { display: block; }
+
+/* Steps (v3) */
+.v3steps { margin-top: 56px !important; }
+.v3steps .step h3 { font-size: 36px; }
+.v3steps .step p { font-size: 27px; }
+
+/* Sender domains */
+.doms { margin-top: 36px; display: grid; gap: 14px; }
+.dom { display: grid; grid-template-columns: 70px 820px 1fr; align-items: center; padding: 18px 28px; background: rgba(10, 22, 48, .78); border: 1px solid rgba(255,255,255,.08); }
+.dom i { font-style: normal; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; font: 900 22px var(--display); background: var(--danger); color: #fff; }
+.dom.ok { border-color: rgba(47,209,138,.4); }
+.dom.ok i { background: var(--ok); color: #04210f; }
+.dom code { font: 600 34px var(--display); color: var(--ink); }
+.dom code u { text-decoration: none; color: #ff8a96; background: rgba(255,77,94,.16); padding: 0 4px; }
+.dom.ok code u { color: var(--ok); background: rgba(47,209,138,.14); }
+.dom span { font: 400 27px/1.4 var(--body); color: var(--ink-2); }
+
+/* URL anatomy */
+.urlbox { position: relative; margin-top: 36px; padding: 30px 40px 30px 110px; background: rgba(10, 22, 48, .78); border: 1px solid rgba(255,255,255,.1); }
+.urlbox i { position: absolute; left: 34px; top: 34px; font-style: normal; width: 48px; height: 48px; display: grid; place-items: center; border-radius: 50%; font: 900 24px var(--display); }
+.urlbox.ok i { background: var(--ok); color: #04210f; } .urlbox.bad i { background: var(--danger); color: #fff; }
+.urlbox code { font: 600 46px var(--display); color: var(--muted); letter-spacing: -.01em; }
+.urlbox.ok code b { color: var(--ok); } .urlbox.bad code b { color: #ff8a96; }
+.urlbox p { margin-top: 14px; font: 400 29px/1.5 var(--body); color: var(--ink-2); }
+.urlbox.ok p b { color: var(--ok); } .urlbox.bad p b { color: #ff8a96; }
+
+/* Case 1 chain */
+.chain { margin-top: 64px; display: flex; align-items: stretch; }
+.chain > div { flex: 1; padding: 28px 26px; background: rgba(10, 22, 48, .78); border: 1px solid rgba(255,255,255,.12); font: 600 29px/1.4 var(--body); color: var(--ink); }
+.chain > div small { display: block; margin-bottom: 12px; font: 900 34px var(--display); color: var(--red); }
+.chain > div.bad { border-color: rgba(255,77,94,.5); background: rgba(255,77,94,.08); }
+.chain > div.bad small { color: #ff8a96; }
+.chain > i { flex: none; width: 50px; display: grid; place-items: center; font-style: normal; font: 900 34px var(--display); color: var(--red); }
+.chain + .callout { margin-top: auto; }
+
+/* Case 3 pattern chips */
+.pattern { margin-top: 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.pattern b { margin-right: 12px; font: 700 30px var(--body); color: var(--ink); }
+.pattern span { padding: 12px 22px; border: 1px solid rgba(255,77,94,.5); background: rgba(255,77,94,.1); font: 600 27px var(--body); color: #ffc6cc; }
+
+/* Reporting */
+.report { margin-top: 44px; flex: 1; display: grid; grid-template-columns: 1fr 1.15fr; gap: 40px; }
+.report .card .n { font-size: 30px; letter-spacing: .02em; font-family: var(--body); font-weight: 700; }
+.report .card li { font-size: 30px; }
+.hot { display: grid; gap: 18px; margin-top: 8px; }
+.hot > div { display: grid; grid-template-columns: 420px 1fr; align-items: baseline; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,.1); }
+.hot b { font: 800 34px var(--display); color: var(--ink); }
+.hot span { font: 400 27px var(--body); color: var(--ink-2); }
+
+/* Post-test QR pair */
+.qrs { margin-top: 40px; display: flex; gap: 120px; justify-content: center; }
+.qrs figure { text-align: center; }
+.qrimg { width: 500px; height: 500px; padding: 30px; background: #fff; border-radius: 24px; box-shadow: 0 40px 120px -30px var(--glow); }
+.qrimg img { width: 100%; height: 100%; display: block; }
+.qrs figcaption { margin-top: 28px; font: 700 40px var(--body); color: var(--ink); }
+
+/* ===========================================
+   EMAIL MOCK-UPS (workshop)
+   =========================================== */
+.v3-mail .frame { bottom: auto; }
+.em { position: absolute; left: var(--pad); top: 300px; width: 1060px; bottom: 150px; display: flex; flex-direction: column; overflow: hidden;
+      background: #f6f8fb; color: #1b2433; border-radius: 16px; box-shadow: 0 40px 120px -30px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.1); }
+.em-bar { display: flex; align-items: center; justify-content: space-between; padding: 12px 26px; background: #e3e9f2; font: 600 20px var(--body); color: #536077; }
+.em-bar i { width: 60px; height: 12px; border-radius: 6px; background: #c5cfdd; }
+.em-ext { padding: 10px 26px; background: #fff4d6; border-bottom: 1px solid #f1dc9c; font: 500 20px var(--body); color: #7a5a00; }
+.em-sub { padding: 16px 26px 6px; font: 700 29px/1.35 var(--body); color: #0f1828; }
+.em-from { display: flex; gap: 16px; align-items: center; padding: 10px 26px 14px; border-bottom: 1px solid #dde3ec; }
+.em-from .av { flex: none; width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; background: #2b6cb0; color: #fff; font: 800 20px var(--display); }
+.em-from b { font: 700 23px var(--body); color: #0f1828; }
+.em-from .addr { font: 500 22px var(--display); color: #4a5568; }
+.em-from small { display: block; margin-top: 2px; font: 400 19px var(--body); color: #7a8699; }
+.em-body { flex: 1; padding: 16px 26px 18px; font: 400 23px/1.55 var(--body); color: #273245; overflow: hidden; }
+.em-body p + p { margin-top: 10px; }
+.em-body p.sign { margin-top: 12px; color: #5b6880; }
+.em-body p.sign + p.sign { margin-top: 0; }
+.em-btn { display: inline-block; margin-top: 16px; padding: 10px 26px; background: #1f6feb; color: #fff; border-radius: 6px; font: 600 22px var(--body); }
+.em-url { display: block; margin-top: 8px; font: 500 19px var(--display); color: #2b6cb0; text-decoration: underline; }
+.em-att { display: inline-flex; align-items: center; margin-top: 14px; padding: 8px 16px; border: 1px solid #ccd5e1; background: #fff; border-radius: 8px; font: 600 21px var(--display); color: #273245; }
+.em-qr { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
+.em-qr img { width: 130px; height: 130px; }
+.mk { display: inline-grid; place-items: center; width: 34px; height: 34px; margin-left: 10px; border-radius: 50%; vertical-align: middle;
+      background: var(--danger); color: #fff; font: 900 18px var(--display); box-shadow: 0 0 0 5px rgba(255,77,94,.25); text-decoration: none; }
+.em.ok .mk { background: #14a46c; box-shadow: 0 0 0 5px rgba(47,209,138,.25); }
+.em.un .mk { background: #d98a00; box-shadow: 0 0 0 5px rgba(255,181,71,.3); }
+
+.ask, .ans, .signs { position: absolute; right: var(--pad); top: 300px; width: 540px; bottom: 150px; }
+.ask { display: flex; flex-direction: column; gap: 22px; }
+.ask h3 { font: 700 44px var(--body); color: var(--ink); }
+.opts { display: grid; gap: 16px; }
+.opts .o { padding: 24px 30px; border: 2px solid; font: 800 34px var(--body); background: rgba(10,22,48,.7); }
+.opts .bad { border-color: rgba(255,77,94,.6); color: #ff8a96; }
+.opts .ok { border-color: rgba(47,209,138,.55); color: var(--ok); }
+.opts .un { border-color: rgba(255,181,71,.55); color: var(--amber); }
+.ask .hint { margin-top: auto; font: 400 26px/1.6 var(--body); color: var(--muted); }
+
+.ans { display: flex; flex-direction: column; }
+.verdict { align-self: flex-start; padding: 12px 26px; font: 800 34px var(--body); color: #fff; background: var(--danger); box-shadow: 0 0 40px rgba(255,77,94,.35); }
+.ans.ok .verdict { background: #14a46c; box-shadow: 0 0 40px rgba(47,209,138,.35); }
+.ans.un .verdict { background: #d98a00; box-shadow: 0 0 40px rgba(255,181,71,.35); font-size: 28px; }
+.pts { list-style: none; margin-top: 18px; display: grid; gap: 4px; }
+.pts li { display: grid; grid-template-columns: 46px 1fr; gap: 14px; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.1); font: 400 23px/1.45 var(--body); color: var(--ink); }
+.pts b { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: var(--danger); font: 900 18px var(--display); color: #fff; }
+.ans.ok .pts b { background: #14a46c; } .ans.un .pts b { background: #d98a00; }
+.todo { margin-top: auto; padding: 18px 22px; background: var(--red-soft); border-left: 5px solid var(--red); font: 400 22px/1.5 var(--body); color: var(--ink); }
+.todo b { display: block; margin-bottom: 4px; font: 700 24px var(--body); color: var(--red-2); }
+
+.signs { list-style: none; display: grid; gap: 0; align-content: space-between; }
+.signs li { display: grid; grid-template-columns: 48px 1fr; gap: 16px; align-items: start; }
+.signs li > b { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--danger); font: 900 20px var(--display); color: #fff; }
+.signs h4 { font: 700 27px/1.25 var(--body); color: var(--ink); }
+.signs p { font: 400 22px/1.4 var(--body); color: var(--ink-2); }
+
+/* --- V3 sizing pass: fill the 1920×1080 stage --- */
+.cards.tall { flex: none; min-height: 440px; }
+.card { padding: 40px 44px; gap: 14px; }
+.card h3 { font-size: 40px; }
+.card p { font-size: 30px; }
+.card li { font-size: 30px; }
+.card ul { gap: 18px; }
+.cards.x .card { padding: 48px 44px; }
+.cards.x .card h3 { font-size: 38px; }
+.cards.sm .card h3 { font-size: 33px; }
+.cards.sm .card p { font-size: 27px; }
+.blist li { font-size: 34px; padding: 28px 0; }
+.blist li::before { margin-top: 19px; }
+.blist.tight li { font-size: 30px; padding: 20px 0; }
+.goals li { font-size: 36px; padding: 32px 0 34px; }
+.col li { font-size: 34px; padding: 26px 0; }
+.dodont { flex: none; margin-top: 56px; }
+.v3steps { margin-top: 80px !important; }
+.v3steps .step h3 { font-size: 42px; }
+.v3steps .step p { font-size: 30px; }
+.pwpair code { font-size: 56px; }
+.node { font-size: 32px; padding: 32px 26px; }
+.stack .node { font-size: 28px; padding: 20px; }
+.card.pm { margin-top: 56px; }
+.factors .card { padding: 56px 48px 60px; }
+.factors .card h3 { font-size: 56px; }
+.factors .card p { font-size: 36px; }
+.report .card li { font-size: 34px; }
+.report .card .n { font-size: 36px; }
+.hot { gap: 26px; }
+.hot > div { grid-template-columns: 1fr; gap: 6px; padding-bottom: 22px; }
+.hot b { font-size: 44px; }
+.hot span { font-size: 30px; }
+.chain > div { font-size: 32px; padding: 34px 28px; }
+.doms { gap: 18px; }
+.dom { padding: 24px 32px; }
+.dom code { font-size: 38px; }
+.dom span { font-size: 30px; }
+.urlbox { margin-top: 44px; padding: 40px 48px 40px 120px; }
+.urlbox code { font-size: 50px; }
+.urlbox p { font-size: 32px; }
+.em-sub { font-size: 31px; }
+.em-from b { font-size: 25px; }
+.em-from .addr { font-size: 23px; }
+.em-ext { font-size: 21px; }
+.em-body { font-size: 25px; }
+.em-url { font-size: 21px; }
+.pts li { font-size: 25px; }
+.todo { font-size: 24px; }
+.signs h4 { font-size: 29px; }
+.signs p { font-size: 24px; }
+.s-close .refs b { font: 700 36px var(--body); letter-spacing: 0; text-transform: none; margin-bottom: 10px; }
+.side-stats .stat b small { font: 700 56px var(--body); margin-left: 12px; letter-spacing: 0; }
+
 </style>
 </head>
 <body>
@@ -710,656 +1063,757 @@ h2 em, .statement em { color: var(--red); text-shadow: 0 0 48px rgba(51, 169, 24
 <main class="deck-stage" id="deckStage">
 
 <!-- ============ 01 TITLE ============ -->
-<section data-shader class="slide s-title">
+<section data-shader class="slide s-title v3">
     <canvas class="orbit pop" id="orbit" width="900" height="900" aria-hidden="true"></canvas>
-    <div class="lockup lockup-top reveal" style="--d:.2s"><img src="assets/alphasec-mark.png" alt="AlphaSec logo"><span>ALPHASEC</span></div>
-    <div class="top">Security Awareness Seminar · 30.11.2569</div>
-    <h1 class="reveal" style="--d:.1s">Cyber<br>Security<span>.</span></h1>
-    <div class="th reveal" style="--d:.25s">รู้ทันภัยไซเบอร์ ป้องกันได้ด้วยตัวเรา</div>
-    <div class="sub reveal" style="--d:.35s">Threat Landscape · Cyber Hygiene · AI · MFA · Phishing Workshop</div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="lockup lockup-top reveal" style="--d:0.20s"><img src="assets/alphasec-mark.png" alt="AlphaSec logo"><span>ALPHASEC</span></div>
+    <div class="top">TRAINING PROGRAM 2026</div>
+    <h1 class="reveal" style="--d:0.10s">Phishing<br>Awareness &amp;<br>Cybersecurity<br>Essentials<span>.</span></h1>
+    <div class="th reveal" style="--d:0.25s">บริษัท กรุงเทพประกันชีวิต จำกัด (มหาชน)</div>
+    <div class="sub reveal" style="--d:0.35s">วันจันทร์ที่ 30 พฤศจิกายน 2569  •  09.00 – 12.00 น.</div>
+    <div class="by reveal" style="--d:0.45s">โดย ALPHASEC Co., Ltd.</div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
 <!-- ============ 02 SPEAKER ============ -->
 <section class="slide">
     <div class="top">Speaker</div>
     <div class="frame">
-        <h2 class="reveal">คณิตสรณ์ <em>ธรณ์ธนากุล</em></h2>
-        <div class="speaker">
-            <div class="reveal" style="--d:.12s">
-                <h3>การศึกษา</h3>
-                <ul>
-                    <li><span>ป.โท การบริหารเครือข่ายดิจิทัลและความมั่นคงปลอดภัยสารสนเทศ <b>มจพ.</b> (กำลังศึกษา)</span></li>
-                    <li><span>ป.ตรี เทคโนโลยีบัณฑิต <b>สถาบันการบินพลเรือน</b></span></li>
-                </ul>
-                <h3 class="gap">ใบรับรอง</h3>
-                <div class="chips">
-                    <span>CISSP</span><span>CySA+</span><span>Security+</span><span>Network+</span><span>ITIL4</span><span>ISO/IEC 27701 LA</span><span>ISO/IEC 42001 LA</span><span>CCEP</span>
-                </div>
-            </div>
-            <div class="reveal" style="--d:.22s">
-                <h3>ประสบการณ์</h3>
-                <ul>
-                    <li><span>วิทยากร <b>Cybersecurity Awareness</b> 2566 – 2569</span></li>
-                    <li><span>วิทยากรบรรยาย <b>Cyber Resilience for Executive</b> 2569</span></li>
-                    <li><span>วิทยากรหลักสูตรนานาชาติ <b>Comprehensive AI &amp; Data Science</b> (TICA × จุฬาลงกรณ์มหาวิทยาลัย) 2569</span></li>
-                    <li><span>ผู้จัดทำสถานการณ์และโจทย์ฝึก (ECG) <b>Thailand’s National Cyber Exercise</b> 2567 – 2568</span></li>
-                    <li><span>วิทยากรหลักสูตรผู้นำการปฏิบัติตาม <b>พ.ร.บ. ไซเบอร์</b> ภาคอุตสาหกรรมการบิน 2567</span></li>
-                </ul>
+        <h2 class="reveal">แนะนำวิทยากร</h2>
+        <div class="spk">
+            <div class="spk-photo pop" style="--d:0.15s"><img src="assets/img/speaker.png" alt="นายคณิตสรณ์ ธรณ์ธนากุล"></div>
+            <div>
+                <h3 class="spk-name reveal" style="--d:0.12s">นายคณิตสรณ์ ธรณ์ธนากุล</h3>
+                <p class="spk-role reveal" style="--d:0.18s">Senior Consultant, Digital Trust – ALPHASEC Co., Ltd.</p>
+                <div class="chips reveal" style="--d:0.24s"><span>CISSP</span><span>ISO/IEC 27701 LA</span><span>ISO/IEC 42001 LA</span><span>CySA+</span><span>Security+</span><span>ITIL4</span><span>CCEP</span></div>
+        <ul class="blist tight"><li class="reveal" style="--d:0.30s"><span>วิทยากร Cybersecurity Awareness (2566 – 2569)</span></li><li class="reveal" style="--d:0.38s"><span>วิทยากร Cyber Resilience for Executive 2569</span></li><li class="reveal" style="--d:0.46s"><span>ผู้จัดทำโจทย์ฝึก (ECG) Thailand's National Cyber Exercise 2567 – 2568</span></li><li class="reveal" style="--d:0.54s"><span>วิทยากรหลักสูตรนานาชาติ Comprehensive AI &amp; Data Science (TICA x จุฬาฯ) 2569</span></li></ul>
             </div>
         </div>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
 <!-- ============ 03 OBJECTIVES ============ -->
 <section class="slide">
     <div class="top">Objectives</div>
     <div class="frame">
-        <h2 class="reveal">จบการอบรมนี้ <em>เราจะ</em></h2>
-        <ol class="goals">
-            <li class="reveal" style="--d:.08s"><span>01</span>เข้าใจสถานการณ์และแนวโน้มภัยไซเบอร์ล่าสุด</li>
-            <li class="reveal" style="--d:.12s"><span>02</span>ป้องกันตัวเองขั้นพื้นฐานได้ (Cyber Hygiene)</li>
-            <li class="reveal" style="--d:.16s"><span>03</span>รู้ทัน Deepfake, AI Phishing, Shadow AI และใช้ AI อย่างปลอดภัย</li>
-            <li class="reveal" style="--d:.20s"><span>04</span>ใช้งานแอปพลิเคชันและบัญชีผู้ใช้อย่างปลอดภัย</li>
-            <li class="reveal" style="--d:.24s"><span>05</span>ตรวจสอบก่อนติดตั้งโปรแกรม และใช้ MFA ได้ถูกต้อง</li>
-            <li class="reveal" style="--d:.28s"><span>06</span>แยกอีเมล Phishing จากอีเมลปกติ และรู้วิธีจัดการ</li>
-            <li class="reveal" style="--d:.32s"><span>07</span>รับมือได้ถูกวิธีเมื่อพบหรือสงสัยว่าถูกโจมตี</li>
-        </ol>
+        <h2 class="reveal">วันนี้เราจะได้อะไรกลับไป</h2>
+        <ol class="goals"><li class="reveal" style="--d:0.08s"><span>01</span>เข้าใจสถานการณ์ภัยไซเบอร์ล่าสุด</li><li class="reveal" style="--d:0.12s"><span>02</span>ป้องกันตนเองขั้นพื้นฐาน (Cyber Hygiene)</li><li class="reveal" style="--d:0.16s"><span>03</span>รู้ทันภัยยุค AI และใช้ AI อย่างปลอดภัย</li><li class="reveal" style="--d:0.20s"><span>04</span>ใช้แอปและบัญชีผู้ใช้อย่างปลอดภัย</li><li class="reveal" style="--d:0.24s"><span>05</span>ตรวจสอบก่อนดาวน์โหลด และใช้ MFA ให้ถูกต้อง</li><li class="reveal" style="--d:0.28s"><span>06</span>แยกแยะอีเมล Phishing และรู้วิธีรับมือ</li><li class="reveal" style="--d:0.32s"><span>07</span>รู้ขั้นตอนเมื่อพบหรือสงสัยว่าถูกโจมตี</li></ol>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 04 AGENDA (TIMETABLE) ============ -->
+<!-- ============ 04 AGENDA ============ -->
 <section class="slide">
     <div class="top">Agenda · 09.00 – 12.00</div>
     <div class="frame">
-        <h2 class="reveal">กำหนดการ <em class="en">3</em> ชั่วโมง</h2>
-        <ol class="agenda sched">
-            <li class="reveal" style="--d:.06s"><span>09.00</span>เปิดการอบรม &amp; Pre-test</li>
-            <li class="reveal" style="--d:.09s"><span>09.10</span><div><i>01</i>สถานการณ์ภัยคุกคามไซเบอร์</div></li>
-            <li class="reveal" style="--d:.12s"><span>09.25</span><div><i>02</i>Cyber Hygiene</div></li>
-            <li class="reveal" style="--d:.15s"><span>09.50</span><div><i>03</i>ภัยยุค AI &amp; ใช้ AI อย่างปลอดภัย</div></li>
-            <li class="reveal brk" style="--d:.18s"><span>10.20</span>พักรับประทานอาหารว่าง</li>
-            <li class="reveal" style="--d:.21s"><span>10.35</span><div><i>04</i>ใช้แอปและบัญชีอย่างปลอดภัย</div></li>
-            <li class="reveal" style="--d:.24s"><span>10.50</span><div><i>05</i>ตรวจสอบก่อนติดตั้ง &amp; MFA</div></li>
-            <li class="reveal" style="--d:.27s"><span>11.10</span><div><i>06</i>Workshop: ฝึกสังเกต Phishing</div></li>
-            <li class="reveal" style="--d:.30s"><span>11.40</span><div><i>07</i>กรณีศึกษา &amp; การรับมือเหตุ</div></li>
-            <li class="reveal" style="--d:.33s"><span>11.55</span>สรุป &amp; Post-test</li>
-        </ol>
+        <h2 class="reveal">หัวข้อการอบรมวันนี้</h2>
+        <ol class="agenda sched v3ag"><li class="reveal " style="--d:0.06s"><span>เริ่ม</span>เปิดการอบรม และ Pre-test</li><li class="reveal " style="--d:0.09s"><span>01</span>สถานการณ์ภัยไซเบอร์และแนวโน้มล่าสุด</li><li class="reveal " style="--d:0.12s"><span>02</span>Cyber Hygiene: ป้องกันตนเองขั้นพื้นฐาน</li><li class="reveal " style="--d:0.15s"><span>03</span>ภัยคุกคามในยุค AI และการใช้ AI อย่างปลอดภัย</li><li class="reveal brk" style="--d:0.18s"><span>พัก</span>พักรับประทานอาหารว่าง</li><li class="reveal " style="--d:0.21s"><span>04</span>ใช้แอปและบัญชีผู้ใช้งานอย่างปลอดภัย</li><li class="reveal " style="--d:0.24s"><span>05</span>ตรวจสอบก่อนดาวน์โหลด และการใช้ MFA</li><li class="reveal " style="--d:0.27s"><span>06</span>Workshop: ฝึกสังเกตอีเมล Phishing</li><li class="reveal " style="--d:0.30s"><span>07</span>กรณีศึกษา และแนวทางเมื่อถูกโจมตี</li><li class="reveal " style="--d:0.33s"><span>ปิด</span>สรุป Post-test และแบบประเมิน</li></ol>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
 <!-- ============ 05 PRE-TEST ============ -->
 <section data-shader="silk" class="slide s-test">
     <div class="top">Before we start</div>
-    <h1 class="reveal" style="--d:.1s">Pre<span>-</span>test</h1>
-    <div class="th reveal" style="--d:.2s">ก่อนเริ่ม วัดความรู้กันก่อน</div>
-    <div class="sub reveal" style="--d:.3s">ตอบตามความเข้าใจของตัวเอง แล้วมาเทียบกับ Post-test หลังจบการอบรม</div>
-    <div class="how reveal" style="--d:.4s"><span><b>1</b>สแกน QR Code</span><em>→</em><span><b>2</b>ตอบคำถาม</span><em>→</em><span><b>3</b>กดส่ง</span></div>
-    <div class="qr pop" style="--d:.3s">QR Code<br>แบบทดสอบก่อนอบรม</div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <h1 class="reveal" style="--d:0.10s">Pre<span>-</span>test</h1>
+    <div class="th reveal" style="--d:0.20s">แบบทดสอบก่อนอบรม (Pre-test)</div>
+    <div class="sub reveal" style="--d:0.30s">สแกน QR Code เพื่อทำแบบทดสอบ</div>
+    <div class="how reveal" style="--d:0.40s"><span><b>⏱</b>เวลา: ประมาณ 5 นาที</span><em>•</em><span><b>10</b>จำนวน: 10 ข้อ</span></div>
+    <div class="hint reveal" style="--d:0.50s">ตอบตามความเข้าใจของตัวเองได้เลย</div>
+    <div class="qr img pop" style="--d:0.30s"><img src="assets/img/qr-pretest.png" alt="QR Code แบบทดสอบก่อนอบรม"></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 06 STATEMENT (01 THREAT LANDSCAPE) ============ -->
-<section data-shader class="slide">
-    <div class="top"><b>01</b> Threat Landscape</div>
-    <div class="statement reveal">ไม่ต้องแฮ็กระบบ<br>แค่<em>แฮ็กคน</em></div>
-    <div class="side-stats">
-        <div class="stat reveal" style="--d:.2s"><b>98%</b><span>ของการโจมตีใช้ Social Engineering</span></div>
-        <div class="stat reveal" style="--d:.35s"><b>68%</b><span>ของการละเมิดข้อมูลเกิดจากความผิดพลาดของคน</span></div>
-    </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+<!-- ============ 06 OPENER 01 ============ -->
+<section data-shader="silk" class="slide v3-open">
+    <div class="top"><b>01</b> Cyber Threat Landscape</div>
+    <div class="opener-num pop">01</div>
+    <div class="opener-title"><h2 class="reveal" style="--d:0.10s">สถานการณ์ภัยคุกคามทางไซเบอร์และแนวโน้มล่าสุด</h2><p class="reveal" style="--d:0.20s">Cyber Threat Landscape</p></div>
+    <div class="opener-ill pop" style="--d:0.25s"><img src="assets/img/ill-14.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 07 THREATS TARGETING INSURANCE / FINANCE ============ -->
+<!-- ============ 07 COMMON THREATS ============ -->
 <section class="slide">
-    <div class="top"><b>01</b> Threat Landscape</div>
+    <div class="top"><b>01</b> Cyber Threat Landscape</div>
     <div class="frame">
-        <h2 class="reveal"><em class="en">6</em> ภัยที่มุ่งโจมตีธุรกิจประกันและการเงิน</h2>
-        <p class="lead reveal" style="--d:.06s">ถือข้อมูลลูกค้า ประวัติสุขภาพ และธุรกรรมการเงินจำนวนมาก จึงเป็นเป้าหมายอันดับต้นๆ</p>
-        <div class="threats">
-            <div class="threat reveal" style="--d:.10s"><h3>Phishing</h3><p>อีเมล/เว็บปลอม หลอกเอารหัสผ่านและข้อมูลลูกค้า</p><div class="k"><b>36%</b><span>ของการโจมตีเริ่มจาก Phishing</span></div></div>
-            <div class="threat reveal" style="--d:.16s"><h3>Ransomware</h3><p>เข้ารหัสไฟล์แล้วเรียกค่าไถ่ ทำให้งานบริการลูกค้าหยุดชะงัก</p><div class="k"><b>2×</b><span>ขู่ซ้ำ: เข้ารหัส + ขู่ปล่อยข้อมูล</span></div></div>
-            <div class="threat reveal" style="--d:.22s"><h3>BEC</h3><p>แอบอ้างผู้บริหารหรือคู่ค้า สั่งโอนเงิน/เปลี่ยนเลขบัญชี</p><div class="k"><b>$2.77B</b><span>ความเสียหาย (FBI IC3 2024)</span></div></div>
-            <div class="threat reveal" style="--d:.28s"><h3>Data Breach</h3><p>ข้อมูลลูกค้ารั่วไหล ทั้งจากการโจมตีและความผิดพลาดของคน</p><div class="k"><b>$4.88M</b><span>ค่าเสียหายเฉลี่ยต่อครั้ง (IBM 2024)</span></div></div>
-            <div class="threat reveal" style="--d:.34s"><h3>Quishing</h3><p>QR Code ปลอมพาไปเว็บหลอกหรือโหลดมัลแวร์</p><div class="k"><b>1.7M+</b><span>QR Code อันตราย</span></div></div>
-            <div class="threat reveal" style="--d:.40s"><h3>Deepfake / Vishing</h3><p>AI ปลอมเสียงหรือวิดีโอ แอบอ้างเป็นผู้บริหารหรือลูกค้า</p><div class="k"><b>$25M</b><span>ถูกหลอกโอนผ่านวิดีโอคอลปลอม</span></div></div>
-        </div>
+        <h2 class="reveal">ภัยไซเบอร์ที่องค์กร<em>พบบ่อย</em></h2>
+        <div class="cards big" style="--c:2"><div class="card  reveal" style="--d:0.10s"><span class="n">01</span><h3 class="en">Phishing</h3><p>อีเมลหรือข้อความหลอกให้คลิกลิงก์ กรอกรหัสผ่าน หรือเปิดไฟล์แนบ</p></div><div class="card  reveal" style="--d:0.16s"><span class="n">02</span><h3 class="en">Ransomware</h3><p>มัลแวร์เข้ารหัสไฟล์ทั้งองค์กร แล้วเรียกค่าไถ่แลกกับการปลดล็อก</p></div><div class="card  reveal" style="--d:0.22s"><span class="n">03</span><h3 class="en">Business Email Compromise (BEC)</h3><p>ปลอมเป็นผู้บริหารหรือคู่ค้า หลอกให้โอนเงินหรือเปลี่ยนเลขบัญชี</p></div><div class="card  reveal" style="--d:0.28s"><span class="n">04</span><h3 class="en">Data Breach</h3><p>ข้อมูลลูกค้าหรือข้อมูลภายในรั่วไหล ทั้งจากการถูกเจาะและความผิดพลาด</p></div></div>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 07b THAILAND 2568 STATS ============ -->
+<!-- ============ 08 GLOBAL STATS ============ -->
 <section class="slide">
-    <div class="top"><b>01</b> Threat Landscape · Thailand</div>
+    <div class="top"><b>01</b> Cyber Threat Landscape</div>
     <div class="frame">
-        <h2 class="reveal">ประเทศไทยปี <em class="en">2568</em>: ตัวเลขที่ต้องรู้</h2>
-        <p class="lead reveal" style="--d:.06s">ผู้เสียหายส่วนใหญ่โดนหลอกซื้อขายสินค้าออนไลน์ 52.99% · โอนเงินรับรางวัล 14.61% · หลอกทำงานออนไลน์ 8.67%</p>
-        <div class="thai">
-            <div class="stat reveal" style="--d:.12s"><b>380,378<small>คดี</small></b><span>อาชญากรรมทางเทคโนโลยีที่แจ้งความตลอดปี 2568 เฉลี่ยกว่า 1,000 คดีต่อวัน</span></div>
-            <div class="stat reveal" style="--d:.20s"><b>฿25,196<small>ล้านบาท</small></b><span>ความเสียหายรวมทั้งปี เฉลี่ยราว 69 ล้านบาทต่อวัน</span></div>
-            <div class="stat reveal" style="--d:.28s"><b>200M+<small>บัญชี</small></b><span>ข้อมูลล็อกอิน (Username / Password) รั่วไหลที่ ThaiCERT ตรวจพบในปี 2568</span></div>
-            <div class="stat reveal" style="--d:.36s"><b>5,875<small>หน่วยงาน</small></b><span>ที่ ThaiCERT ต้องออกประกาศแจ้งเตือนว่าได้รับผลกระทบ</span></div>
-        </div>
-        <p class="src reveal" style="--d:.44s">ที่มา: สถิติสำนักงานตำรวจแห่งชาติ ปี 2568 (MGR Online, 21 มี.ค. 2569) · รายงาน ThaiCERT / สกมช. ต่อคณะรัฐมนตรี (Nation TV, 26 ก.พ. 2569)</p>
+        <h2 class="reveal">ภาพรวมสถิติ<em>จากทั่วโลก</em></h2>
+        <div class="kpis"><div class="kpi reveal" style="--d:0.10s"><b>$4.99M</b><span>ค่าเสียหายเฉลี่ยต่อเหตุ Data Breach (ทั่วโลก)</span><small>IBM 2026</small></div><div class="kpi reveal" style="--d:0.16s"><b>$6.29M</b><span>ค่าเสียหายเฉลี่ยในภาคการเงิน สูงกว่าค่าเฉลี่ย 26%</span><small>IBM 2026</small></div><div class="kpi reveal" style="--d:0.22s"><b class="thb">อันดับ 1</b><span>Phishing เป็นช่องทางเริ่มโจมตีที่พบมากที่สุด ติดต่อกันเป็นปีที่ 4</span><small>IBM 2026</small></div><div class="kpi reveal" style="--d:0.28s"><b>62%</b><span>ของเหตุ Breach มี “Human Factor” เข้ามาเกี่ยวข้อง</span><small>Verizon DBIR 2026</small></div><div class="kpi reveal" style="--d:0.34s"><b>$20.9B</b><span>ความเสียหายจากอาชญากรรมไซเบอร์ที่แจ้ง FBI ในปี 2025</span><small>FBI IC3 2025</small></div><div class="kpi reveal" style="--d:0.40s"><b>$3.05B</b><span>ความเสียหายจาก Business Email Compromise (BEC)</span><small>FBI IC3 2025</small></div></div>
+        <p class="v3src reveal" style="--d:0.50s">ที่มา: IBM Cost of a Data Breach Report 2026; Verizon 2026 Data Breach Investigations Report; FBI Internet Crime Report 2025 (IC3)</p>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 08 IMPACT + PDPA ============ -->
+<!-- ============ 09 THAILAND ============ -->
 <section class="slide">
-    <div class="top"><b>01</b> Threat Landscape</div>
-    <div class="frame" style="right:780px">
-        <h2 class="reveal">โดนครั้งเดียว<br><em>เสียหาย 3 ด้าน</em></h2>
-        <ol class="impacts">
-            <li class="reveal" style="--d:.12s"><b>01</b><div><h3>การเงิน</h3><p>ค่ากู้คืนระบบ ธุรกิจหยุดชะงัก เงินที่ถูกหลอกโอนมักตามคืนไม่ได้</p></div></li>
-            <li class="reveal" style="--d:.20s"><b>02</b><div><h3>ชื่อเสียง</h3><p>ลูกค้าและคู่ค้าขาดความเชื่อมั่น ข่าวเสียหายอยู่บนโลกออนไลน์นาน</p></div></li>
-            <li class="reveal" style="--d:.28s"><b>03</b><div><h3>กฎหมาย</h3><p>ความรับผิดตาม PDPA และการรายงานต่อหน่วยงานกำกับดูแล</p></div></li>
-        </ol>
+    <div class="top"><b>01</b> Cyber Threat Landscape · Thailand</div>
+    <div class="frame">
+        <h2 class="reveal">สถานการณ์<em>ในประเทศไทย</em></h2>
+        <div class="th9">
+            <div class="card hero reveal" style="--d:0.10s"><span class="n">แจ้งความออนไลน์ใน 1 สัปดาห์</span><div class="kpi"><b>5,716 คดี</b></div><p class="big">ความเสียหายรวม 177 ล้านบาท<br>หรือเฉลี่ยวันละประมาณ 25 ล้านบาท</p><p class="muted">ช่วง 19 – 25 ก.ค. 2569 (ศูนย์ ACSC / Thaipoliceonline)</p><p class="peak">บางสัปดาห์สูงถึง 7,372 คดี / 397 ล้านบาท (5 – 11 เม.ย. 2569)</p></div>
+            <div class="th9r">
+                <div class="kpi row reveal" style="--d:0.20s"><b>เกือบ 94 ล้านบาท</b><span>ความเสียหายจาก CEO Fraud / BEC เพียง 3 คดี ในเดือน พ.ค. 2569</span></div>
+                <div class="kpi row reveal" style="--d:0.28s"><b>68.1%</b><span>หน่วยงานเลือก “การโจมตีที่ใช้ AI” เป็นความเสี่ยงอันดับ 1 (สกมช. TH-NCRAF 2026)</span></div>
+                <div class="kpi row reveal" style="--d:0.36s"><b>50.2%</b><span>มองว่าภาคการเงินและธนาคาร ได้รับผลกระทบต่อเนื่องเป็นลูกโซ่สูง</span></div>
+            </div>
+        </div>
+        <p class="v3src reveal" style="--d:0.50s">ที่มา: ศูนย์ ACSC สตช. (สรุปรายสัปดาห์ ผ่านสื่อ กรุงเทพธุรกิจ/เดลินิวส์/ไทยโพสต์), สกมช. TH-NCRAF 2026 (ฐานเศรษฐกิจ 12 ต.ค. 2569)</p>
     </div>
-    <div class="penalty reveal" style="--d:.2s">
-        <span class="lab">โทษตาม PDPA</span>
-        <b>฿5M</b>
-        <span class="u">โทษปรับทางปกครองสูงสุด</span>
-        <hr>
-        <span class="jail">จำคุกสูงสุด 1 ปี</span>
-        <p>การละเมิดอาจมีโทษทั้งทางแพ่ง ทางอาญา และทางปกครอง</p>
-    </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 09 OPENER 02 CYBER HYGIENE ============ -->
-<section data-shader="silk" class="slide">
+<!-- ============ 10 WHY INSURANCE & FINANCE ============ -->
+<section class="slide">
+    <div class="top"><b>01</b> Cyber Threat Landscape</div>
+    <div class="frame withill">
+        <h2 class="reveal">ทำไมธุรกิจประกันและการเงิน<em>จึงเป็นเป้าหมาย</em></h2>
+        <div class="cards " style="--c:2"><div class="card  reveal" style="--d:0.10s"><span class="n">01</span><h3 class="">ข้อมูลลูกค้ามีค่าสูง</h3><p>บัตรประชาชน ข้อมูลสุขภาพ เลขบัญชี ผู้รับผลประโยชน์</p></div><div class="card  reveal" style="--d:0.16s"><span class="n">02</span><h3 class="">เกี่ยวข้องกับเงินโดยตรง</h3><p>เคลม เบี้ยประกัน การจ่ายผลประโยชน์ และการโอนเงิน</p></div><div class="card  reveal" style="--d:0.22s"><span class="n">03</span><h3 class="">มีผู้เกี่ยวข้องจำนวนมาก</h3><p>พนักงาน ตัวแทน นายหน้า คู่ค้า และลูกค้าหลายช่องทาง</p></div><div class="card  reveal" style="--d:0.28s"><span class="n">04</span><h3 class="">ความน่าเชื่อถือคือหัวใจ</h3><p>มิจฉาชีพจึงชอบแอบอ้างชื่อบริษัทไปหลอกลูกค้า</p></div></div>
+    </div>
+    <div class="ill  pop" style="--d:0.20s"><img src="assets/img/ill-19.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 11 IMPACT ============ -->
+<section class="slide">
+    <div class="top"><b>01</b> Cyber Threat Landscape</div>
+    <div class="frame">
+        <h2 class="reveal">ผลกระทบ<em>เมื่อเกิดเหตุ</em></h2>
+        <div class="cards tall" style="--c:3"><div class="card  reveal" style="--d:0.10s"><span class="n">01</span><h3 class="">การเงิน</h3><ul><li>ค่ากู้คืนระบบและสืบสวน</li><li>เงินที่ถูกโอนออกไป</li><li>ธุรกิจหยุดชะงัก</li></ul></div><div class="card  reveal" style="--d:0.18s"><span class="n">02</span><h3 class="">ชื่อเสียง</h3><ul><li>ลูกค้าขาดความเชื่อมั่น</li><li>ข่าวเสียหายแพร่เร็วในโซเชียล</li><li>กระทบตัวแทนและคู่ค้า</li></ul></div><div class="card warn reveal" style="--d:0.26s"><span class="n">03</span><h3 class="">กฎหมาย (PDPA)</h3><ul><li>แจ้ง สคส. ภายใน 72 ชม.</li><li>โทษปรับทางปกครองสูงสุด 5 ล้านบาท</li><li>ค่าเสียหายทางแพ่งและโทษอาญา</li></ul></div></div>
+    </div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 12 OPENER 02 ============ -->
+<section data-shader="silk" class="slide v3-open">
     <div class="top"><b>02</b> Cyber Hygiene</div>
     <div class="opener-num pop">02</div>
-    <div class="opener-title">
-        <h2 class="reveal" style="--d:.1s"><span class="en">Cyber Hygiene</span></h2>
-        <p class="reveal" style="--d:.2s">นิสัยพื้นฐานด้านความปลอดภัย ที่ทุกคนทำได้ทุกวัน</p>
-    </div>
-    <div class="opener-stats">
-        <div class="stat reveal" style="--d:.25s"><b>81%</b><span>ของการละเมิดเกิดจากรหัสผ่านอ่อนแอ</span></div>
-        <div class="stat reveal" style="--d:.35s"><b>6<small>เรื่อง</small></b><span>รหัสผ่าน · อัปเดต · ล็อกหน้าจอ · Wi-Fi · Backup · ชั้นความลับข้อมูล</span></div>
-    </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="opener-title"><h2 class="reveal" style="--d:0.10s">Cyber Hygiene: การป้องกันตนเองขั้นพื้นฐาน</h2><p class="reveal" style="--d:0.20s">นิสัยดิจิทัลที่ทำได้ทุกวัน</p></div>
+    <div class="opener-ill pop" style="--d:0.25s"><img src="assets/img/ill-26.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 10 PASSWORD STRENGTH ============ -->
-<section class="slide">
-    <div class="top"><b>02</b> Cyber Hygiene</div>
-    <div class="pw-left">
-        <h2 class="reveal">รหัสผ่านคือ<br><em>ด่านแรก</em> ของข้อมูล</h2>
-        <div class="stat reveal" style="--d:.2s"><b>81%</b><span>ของการละเมิดเกิดจากรหัสผ่านอ่อนแอ</span></div>
-    </div>
-    <div class="pw-table">
-        <div class="hd reveal"><span>รหัสผ่าน</span><span>ความแข็งแรง</span><span style="text-align:right">เวลาแฮ็ก</span></div>
-        <div class="pw-row weak reveal" style="--d:.15s"><code>123456</code><div class="track"><div class="fill grow" style="width:3%"></div></div><span class="t">ทันที</span></div>
-        <div class="pw-row weak reveal" style="--d:.25s"><code>password123</code><div class="track"><div class="fill grow" style="width:8%;--d:.4s"></div></div><span class="t">&lt; 1 วินาที</span></div>
-        <div class="pw-row reveal" style="--d:.35s"><code>Company2025</code><div class="track"><div class="fill grow" style="width:35%;--d:.5s;background:#8a8a86"></div></div><span class="t">~3 ชม.</span></div>
-        <div class="pw-row strong reveal" style="--d:.45s"><code>Kr#9vL!m2@Qx</code><div class="track"><div class="fill grow" style="width:100%;--d:.6s"></div></div><span class="t">~400 ปี</span></div>
-    </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
-</section>
-
-<!-- ============ 11 PASSWORD DO / DON'T + PASSWORD MANAGER ============ -->
+<!-- ============ 13 PASSWORDS ============ -->
 <section class="slide">
     <div class="top"><b>02</b> Cyber Hygiene</div>
     <div class="frame">
-        <h2 class="reveal">รหัสผ่าน: ควรทำ กับ ไม่ควรทำ</h2>
-        <div class="dodont">
-            <div class="col yes reveal" style="--d:.1s">
-                <h3><i>✓</i>สิ่งที่ควรทำ</h3>
-                <ul>
-                    <li><span class="sq"></span>ยาว 12 ตัวขึ้นไป หรือใช้ Passphrase</li>
-                    <li><span class="sq"></span>ใช้รหัสผ่านต่างกันทุกบัญชี</li>
-                    <li><span class="sq"></span>ใช้ Password Manager ช่วยสร้างและจำรหัส</li>
-                    <li><span class="sq"></span>เปิด MFA ทุกบัญชีที่รองรับ</li>
-                    <li><span class="sq"></span>เปลี่ยนทันทีเมื่อสงสัยว่ารั่วไหล</li>
-                </ul>
-            </div>
-            <div class="col no reveal" style="--d:.2s">
-                <h3><i>✕</i>สิ่งที่ไม่ควรทำ</h3>
-                <ul>
-                    <li><span class="sq"></span>ใช้ข้อมูลส่วนตัว เช่น วันเกิด ชื่อ</li>
-                    <li><span class="sq"></span>ใช้รหัสผ่านซ้ำหลายบัญชี</li>
-                    <li><span class="sq"></span>จด Sticky Note ติดหน้าจอ</li>
-                    <li><span class="sq"></span>แชร์รหัสผ่านกับผู้อื่น</li>
-                    <li><span class="sq"></span>ส่งรหัสผ่านทางอีเมลหรือแชท</li>
-                </ul>
-            </div>
+        <h2 class="reveal">รหัสผ่านที่ปลอดภัย: <em>ยาว จำง่าย ไม่ซ้ำ</em></h2>
+        <div class="pwpair">
+            <div class="card warn reveal" style="--d:0.10s"><span class="n">✕ รหัสผ่านที่ไม่ควรใช้</span><code>P@ssw0rd1 &nbsp;&nbsp; Bla2569!</code><p>สั้น เดาง่าย หรือใช้ชื่อบริษัท/ปี พ.ศ.</p></div>
+            <div class="card ok reveal" style="--d:0.18s"><span class="n">✓ แนะนำ: ใช้วลี (Passphrase)</span><code>Mango-Rain-Bicycle-27!</code><p>ยาว 14 ตัวขึ้นไป จำง่ายแต่เดายาก</p></div>
         </div>
+        <ul class="blist grid2"><li class="reveal" style="--d:0.26s"><span>ยาวอย่างน้อย 12–14 ตัวอักษร</span></li><li class="reveal" style="--d:0.34s"><span>ไม่ใช้รหัสผ่านซ้ำกับเว็บไซต์ส่วนตัว</span></li><li class="reveal" style="--d:0.42s"><span>เปลี่ยนทันทีเมื่อสงสัยว่ารั่วไหล</span></li><li class="reveal" style="--d:0.50s"><span>ไม่จดแปะไว้ที่จอหรือบอกใคร แม้แต่ IT</span></li></ul>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 12 HYGIENE CHECKLIST ============ -->
+<!-- ============ 14 PASSWORD REUSE ============ -->
 <section class="slide">
     <div class="top"><b>02</b> Cyber Hygiene</div>
     <div class="frame">
-        <h2 class="reveal">นิสัยพื้นฐานที่ต้องทำ<em>ทุกวัน</em></h2>
-        <div class="checks">
-            <div class="check reveal" style="--d:.1s"><h3>อุปกรณ์ &amp; โต๊ะทำงาน</h3><ul>
-                <li><div><b>อัปเดตระบบและแอป</b><span>ติดตั้ง Update เมื่อมีแจ้งเตือน อย่าเลื่อนนาน</span></div></li>
-                <li><div><b>ล็อกหน้าจอทุกครั้งที่ลุก</b><span class="mono">Win + L · Ctrl + Cmd + Q</span></div></li>
-                <li><div><b>Clean Desk</b><span>ไม่ทิ้งเอกสารลูกค้าหรือรหัสผ่านไว้บนโต๊ะ</span></div></li>
-            </ul></div>
-            <div class="check reveal" style="--d:.2s"><h3>Wi-Fi สาธารณะ</h3><ul>
-                <li><div><b>เลี่ยงธุรกรรมสำคัญ</b><span>ไม่เข้าระบบงาน ไม่กรอกรหัสผ่าน</span></div></li>
-                <li><div><b>ใช้ VPN ของบริษัท</b><span>เข้ารหัสการเชื่อมต่อทุกครั้ง</span></div></li>
-                <li><div><b>ปิด Auto-connect</b><span>ระวัง Wi-Fi ชื่อเหมือนร้านจริง</span></div></li>
-            </ul></div>
-            <div class="check reveal" style="--d:.3s"><h3>สำรองข้อมูล (Backup)</h3><ul>
-                <li><div><b>กฎ 3-2-1</b><span>3 สำเนา · 2 สื่อ · 1 ชุดเก็บแยก</span></div></li>
-                <li><div><b>เก็บไฟล์ในที่ที่บริษัทกำหนด</b><span>ไดรฟ์กลาง / Cloud ที่ได้รับอนุมัติ</span></div></li>
-                <li><div><b>ทดสอบกู้คืน</b><span>Backup ที่กู้ไม่ได้ เท่ากับไม่มี</span></div></li>
-            </ul></div>
+        <h2 class="reveal">อย่าใช้รหัสผ่านซ้ำ <em>ให้ Password Manager ช่วย</em></h2>
+        <div class="reuse">
+            <div class="node bad reveal" style="--d:0.10s">เว็บช้อปปิ้งถูกแฮก</div><i class="reveal" style="--d:0.16s">→</i>
+            <div class="node reveal" style="--d:0.20s">รหัสผ่านเดียวกัน</div><i class="reveal" style="--d:0.26s">→</i>
+            <div class="stack reveal" style="--d:0.30s"><div class="node">อีเมลบริษัท</div><div class="node">Mobile Banking</div><div class="node">Facebook / LINE</div></div><i class="reveal" style="--d:0.36s">=</i>
+            <div class="node bad big reveal" style="--d:0.40s">รหัสหลุดที่เดียว<br><b>เสียหายทุกบัญชี</b></div>
         </div>
+        <div class="card ok pm reveal" style="--d:0.50s"><h3 class="en">Password Manager</h3><p>สร้างและจำรหัสผ่านที่ยาวและไม่ซ้ำให้ทุกบัญชี เราจำแค่รหัสหลักรหัสเดียว</p><p class="muted">ใช้เฉพาะเครื่องมือที่บริษัทอนุญาต และเปิด MFA ให้บัญชีหลักเสมอ</p></div>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 13 DATA CLASSIFICATION ============ -->
+<!-- ============ 15 UPDATES ============ -->
+<section class="slide">
+    <div class="top"><b>02</b> Cyber Hygiene</div>
+    <div class="frame withill w">
+        <h2 class="reveal">อัปเดตระบบและแอปพลิเคชัน<em>อย่างสม่ำเสมอ</em></h2>
+        <ul class="blist "><li class="reveal" style="--d:0.10s"><span><b>อย่ากด “เลื่อนไปก่อน” นานเกินไป</b> อัปเดตด้านความปลอดภัยมักปิดช่องโหว่ที่ถูกใช้โจมตีจริงแล้ว</span></li><li class="reveal" style="--d:0.18s"><span><b>รีสตาร์ตเครื่องตามที่ IT แจ้ง</b> เพื่อให้อัปเดตทำงานสมบูรณ์</span></li><li class="reveal" style="--d:0.26s"><span><b>มือถือก็ต้องอัปเดต</b> ทั้งระบบปฏิบัติการและแอปที่ใช้ทำงาน</span></li><li class="reveal" style="--d:0.34s"><span><b>ไม่ใช้ซอฟต์แวร์เถื่อนหรือหมดอายุการสนับสนุน</b> เพราะจะไม่ได้รับแพตช์อีก</span></li></ul>
+    </div>
+    <div class="ill land pop" style="--d:0.20s"><img src="assets/img/ill-38.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 16 LOCK SCREEN & CLEAN DESK ============ -->
+<section class="slide">
+    <div class="top"><b>02</b> Cyber Hygiene</div>
+    <div class="frame withill w">
+        <h2 class="reveal">ล็อกหน้าจอ <em>และ Clean Desk</em></h2>
+        <div class="lockbox reveal" style="--d:0.10s"><h3>ลุกจากโต๊ะ = ล็อกจอ</h3><div class="combo"><span class="os">Windows:</span><span class="kbd">Windows</span><em>+</em><span class="kbd">L</span></div><div class="combo"><span class="os">Mac:</span><span class="kbd">Ctrl</span><em>+</em><span class="kbd">Cmd</span><em>+</em><span class="kbd">Q</span></div></div>
+        <ul class="blist tight"><li class="reveal" style="--d:0.20s"><span>เก็บเอกสารลูกค้าเข้าลิ้นชักที่ล็อกได้</span></li><li class="reveal" style="--d:0.28s"><span>ไม่ทิ้งเอกสารสำคัญไว้ที่เครื่องพิมพ์</span></li><li class="reveal" style="--d:0.36s"><span>ทำลายเอกสารด้วยเครื่องย่อย ไม่ทิ้งลงถังขยะทั่วไป</span></li><li class="reveal" style="--d:0.44s"><span>ไม่จดรหัสผ่านแปะไว้ที่จอหรือใต้คีย์บอร์ด</span></li></ul>
+    </div>
+    <div class="ill land pop" style="--d:0.20s"><img src="assets/img/ill-39.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 17 PUBLIC WI-FI ============ -->
+<section class="slide">
+    <div class="top"><b>02</b> Cyber Hygiene</div>
+    <div class="frame withill w">
+        <h2 class="reveal">ข้อควรระวังในการใช้ <em>Wi-Fi สาธารณะ</em></h2>
+        <div class="cards sm" style="--c:2"><div class="card warn reveal" style="--d:0.10s"><h3 class="">ระวัง Wi-Fi ปลอม (Evil Twin)</h3><p>ชื่อเหมือนของร้าน แต่ตั้งโดยมิจฉาชีพเพื่อดักข้อมูล</p></div><div class="card  reveal" style="--d:0.16s"><h3 class="">ใช้ Hotspot มือถือ หรือ VPN ของบริษัท</h3><p>เมื่อต้องทำงานนอกออฟฟิศ</p></div><div class="card  reveal" style="--d:0.22s"><h3 class="">ไม่ทำธุรกรรมสำคัญ</h3><p>เช่น เข้าระบบงานหลัก โอนเงิน หรือกรอกข้อมูลลูกค้า</p></div><div class="card  reveal" style="--d:0.28s"><h3 class="">ปิด Auto-connect</h3><p>ไม่ให้มือถือเชื่อม Wi-Fi ที่ไม่รู้จักเอง</p></div></div>
+    </div>
+    <div class="ill land pop" style="--d:0.20s"><img src="assets/img/ill-40.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 18 BACKUP 3-2-1 ============ -->
 <section class="slide">
     <div class="top"><b>02</b> Cyber Hygiene</div>
     <div class="frame">
-        <h2 class="reveal">จัดการข้อมูลลูกค้า<em>ตามชั้นความลับ</em></h2>
-        <ol class="rows">
-            <li class="reveal" style="--d:.10s"><b>01</b><h3>ลับมาก <span class="en">· Restricted</span></h3><p>ข้อมูลสุขภาพ ประวัติเคลม เลขบัตรประชาชน — เข้ารหัส เข้าถึงเฉพาะผู้มีสิทธิ์</p></li>
-            <li class="reveal" style="--d:.16s"><b>02</b><h3>ลับ <span class="en">· Confidential</span></h3><p>ข้อมูลกรมธรรม์ เบอร์โทร ที่อยู่ลูกค้า — ห้ามส่งออกนอกระบบบริษัท</p></li>
-            <li class="reveal" style="--d:.22s"><b>03</b><h3>ใช้ภายใน <span class="en">· Internal</span></h3><p>ระเบียบ คู่มือ เอกสารประชุม — แชร์ได้เฉพาะพนักงาน</p></li>
-            <li class="reveal" style="--d:.28s"><b>04</b><h3>เปิดเผยได้ <span class="en">· Public</span></h3><p>โบรชัวร์ ข่าวประชาสัมพันธ์ — เผยแพร่ได้หลังได้รับอนุมัติ</p></li>
-        </ol>
-        <p class="note reveal" style="--d:.34s">* ระดับชั้นความลับและวิธีจัดการ ให้ยึดตามนโยบายของบริษัทเป็นหลัก</p>
+        <h2 class="reveal">การสำรองข้อมูล (Backup) <em>ด้วยหลัก 3-2-1</em></h2>
+        <div class="b321"><div class="card reveal" style="--d:0.10s"><b>3</b><h3>สำเนา</h3><p>เก็บข้อมูลสำคัญไว้อย่างน้อย 3 ชุด</p></div><div class="card reveal" style="--d:0.20s"><b>2</b><h3>สื่อจัดเก็บ</h3><p>อยู่บนสื่อหรืออุปกรณ์ต่างกัน 2 แบบ</p></div><div class="card reveal" style="--d:0.30s"><b>1</b><h3>นอกสถานที่</h3><p>อย่างน้อย 1 ชุดแยกไว้นอกสถานที่หรือแบบออฟไลน์</p></div></div>
+        <div class="callout  reveal" style="--d:0.45s"><b>ทำไมสำคัญ:</b> เมื่อโดน Ransomware ข้อมูลสำรองที่แยกออกไปคือสิ่งที่ช่วยให้กู้คืนได้โดยไม่ต้องจ่ายค่าไถ่</div>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 14 OPENER 03 AI ============ -->
-<section data-shader="silk" class="slide">
+<!-- ============ 19 DATA CLASSIFICATION ============ -->
+<section class="slide">
+    <div class="top"><b>02</b> Cyber Hygiene</div>
+    <div class="frame">
+        <h2 class="reveal">การจัดการข้อมูลลูกค้า<em>ตามชั้นความลับ</em></h2>
+        <table class="tbl reveal" style="--d:0.10s"><thead><tr><th>ระดับ</th><th>ตัวอย่างข้อมูล</th><th>วิธีจัดการ</th></tr></thead><tbody><tr class="l1"><td>สาธารณะ<small>Public</small></td><td>โบรชัวร์ผลิตภัณฑ์ ข่าวประชาสัมพันธ์</td><td>เผยแพร่ได้</td></tr><tr class="l2"><td>ใช้ภายใน<small>Internal</small></td><td>ประกาศภายใน คู่มือการทำงาน</td><td>ใช้ภายในบริษัทเท่านั้น</td></tr><tr class="l3"><td>ลับ<small>Confidential</small></td><td>ข้อมูลลูกค้า เลขกรมธรรม์ เลขบัญชี</td><td>เข้าถึงเท่าที่จำเป็น เข้ารหัสเมื่อส่งออก</td></tr><tr class="l4"><td>ลับมาก<small>Restricted</small></td><td>ข้อมูลสุขภาพ ผลตรวจ ข้อมูลอ่อนไหวตาม PDPA</td><td>ควบคุมเข้มงวด ห้ามส่งออกนอกระบบ</td></tr></tbody></table>
+    </div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 20 OPENER 03 ============ -->
+<section data-shader="silk" class="slide v3-open">
     <div class="top"><b>03</b> AI Threats</div>
     <div class="opener-num pop">03</div>
-    <div class="opener-title">
-        <h2 class="reveal" style="--d:.1s">ภัยคุกคามในยุค <span class="en">AI</span></h2>
-        <p class="reveal" style="--d:.2s">Deepfake · AI Phishing · Shadow AI และวิธีใช้ AI อย่างปลอดภัย</p>
-    </div>
-    <div class="opener-stats">
-        <div class="stat reveal" style="--d:.25s"><b>82%</b><span>ของ Phishing สร้างโดย AI</span></div>
-        <div class="stat reveal" style="--d:.35s"><b>3<small>วินาที</small></b><span>ความยาวเสียงต้นฉบับที่ AI ใช้โคลนเสียงคนได้</span></div>
-    </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="opener-title"><h2 class="reveal" style="--d:0.10s">ภัยคุกคามในยุค AI และการใช้ AI อย่างปลอดภัย</h2><p class="reveal" style="--d:0.20s">Deepfake • AI Phishing • Shadow AI</p></div>
+    <div class="opener-ill pop" style="--d:0.25s"><img src="assets/img/ill-47.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 15 AI TACTICS ============ -->
+<!-- ============ 21 DEEPFAKE ============ -->
+<section class="slide">
+    <div class="top"><b>03</b> AI Threats</div>
+    <div class="frame withill w">
+        <h2 class="reveal"><span class="en">Deepfake</span>: เสียงและวิดีโอปลอม<em>ที่แอบอ้างเป็นผู้บริหาร</em></h2>
+        <span class="pill reveal" style="--d:0.08s">กรณีศึกษา: ฮ่องกง 2567</span>
+        <div class="kpi row reveal" style="--d:0.14s"><b>~US$25 ล้าน</b><span>ถูกโอนออกไป หลังพนักงานประชุมวิดีโอกับ “ผู้บริหาร” ที่สร้างจาก AI ทั้งหมด</span></div>
+        <div class="kpi row reveal" style="--d:0.22s"><b>1 ใน 4</b><span>ของการโจมตีที่ประสงค์ร้าย มี AI เป็นส่วนหนึ่ง และเกือบครึ่งของการโจมตีด้วย AI คือการปลอมตัวด้วย Deepfake</span></div>
+        <p class="v3src reveal" style="--d:0.50s">ที่มา: IBM Cost of a Data Breach Report 2026; ข่าว CNN / SCMP กรณี Arup (ก.พ. – พ.ค. 2567)</p>
+    </div>
+    <div class="ill land pop" style="--d:0.20s"><img src="assets/img/ill-48.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 22 DEEPFAKE RESPONSE ============ -->
 <section class="slide">
     <div class="top"><b>03</b> AI Threats</div>
     <div class="frame">
-        <h2 class="reveal">ภัยยุค <span class="en">AI</span>: <em>เนียนจนแยกไม่ออก</em></h2>
-        <div class="tactics">
-            <div class="tactic reveal" style="--d:.10s"><h3>Deepfake เสียง<small>Voice Clone</small></h3><p>โคลนเสียงผู้บริหารหรือลูกค้าจากคลิปเพียงไม่กี่วินาที</p><q>ผมเองนะ ช่วยโอนให้ซัพพลายเออร์ด่วน เอกสารตามไป</q></div>
-            <div class="tactic reveal" style="--d:.18s"><h3>Deepfake วิดีโอ<small>วิดีโอคอลปลอม</small></h3><p>ใบหน้าและเสียงเหมือนจริง แอบอ้างเป็นผู้บริหารในห้องประชุมออนไลน์</p><q>เรื่องนี้ลับนะ อย่าเพิ่งบอกใคร โอนให้เสร็จภายในวันนี้</q></div>
-            <div class="tactic reveal" style="--d:.26s"><h3>AI Phishing<small>เจาะจงตัวบุคคล</small></h3><p>ไม่มีคำผิด รู้ชื่อ ตำแหน่ง และงานที่เรากำลังทำอยู่</p><q>ตามที่คุยในประชุมเมื่อวาน รบกวนตรวจไฟล์แนบนี้ครับ</q></div>
-            <div class="tactic reveal" style="--d:.34s"><h3>Pretexting<small>แอบอ้างตัวตน</small></h3><p>สร้างเรื่องหรือบทบาทปลอมให้เหยื่อเชื่อใจ</p><q>ผมเป็นเจ้าหน้าที่ IT ต้องขอรหัสผ่านเพื่อซ่อมระบบ</q></div>
-        </div>
-    </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
-</section>
-
-<!-- ============ 16 RED FLAGS ============ -->
-<section class="slide">
-    <div class="top"><b>03</b> AI Threats</div>
-    <div class="frame">
-        <h2 class="reveal">ได้ยินประโยคเหล่านี้ <em>ให้หยุดคิด</em></h2>
-        <div class="redflags">
-            <div class="rf reveal" style="--d:.08s"><span class="n">01</span><h4>เร่งรัดผิดปกติ</h4><q>ต้องทำตอนนี้!</q></div>
-            <div class="rf reveal" style="--d:.14s"><span class="n">02</span><h4>สร้างความกลัว</h4><q>บัญชีจะถูกปิด!</q></div>
-            <div class="rf reveal" style="--d:.20s"><span class="n">03</span><h4>ดีเกินจริง</h4><q>ได้รับรางวัลใหญ่!</q></div>
-            <div class="rf reveal" style="--d:.26s"><span class="n">04</span><h4>ขอข้อมูลส่วนตัว</h4><q>ขอรหัสผ่านหน่อย</q></div>
-            <div class="rf reveal" style="--d:.32s"><span class="n">05</span><h4>ยืนยันตัวตนไม่ได้</h4><q>โทรกลับไม่ได้</q></div>
-            <div class="rf reveal" style="--d:.38s"><span class="n">06</span><h4>ขอให้เป็นความลับ</h4><q>อย่าบอกใครนะ</q></div>
-        </div>
-        <div class="defense reveal" style="--d:.5s">
-            <div class="lab">วิธีรับมือ</div>
-            <div><b>ตั้งสติ คิดก่อน</b>อย่าให้ความเร่งรีบทำให้พลาด</div>
-            <div><b>ยืนยันช่องทางอื่น</b>โทรกลับตามเบอร์ที่รู้จักเอง</div>
-            <div><b>ไม่ให้ข้อมูล</b>รหัสผ่าน / OTP ไม่บอกใคร</div>
-            <div><b>รายงาน IT</b>พบเหตุผิดปกติ แจ้งทันที</div>
-        </div>
-    </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
-</section>
-
-<!-- ============ 17 SHADOW AI ============ -->
-<section class="slide">
-    <div class="top"><b>03</b> AI Threats</div>
-    <div class="frame">
-        <h2 class="reveal"><span class="en">Shadow AI</span>: ใช้ AI <em>อย่างปลอดภัย</em></h2>
-        <p class="lead reveal" style="--d:.06s">ความเสี่ยงจากการนำข้อมูลลูกค้าหรือเอกสารภายใน ไปใช้กับเครื่องมือ AI ที่องค์กรไม่ได้อนุญาต</p>
+        <h2 class="reveal">รับมือ <span class="en">Deepfake</span>: <em>“สงสัยไว้ก่อน ยืนยันอีกช่องทาง”</em></h2>
         <div class="dodont">
-            <div class="col yes reveal" style="--d:.1s">
-                <h3><i>✓</i>ใช้ได้</h3>
-                <ul>
-                    <li><span class="sq"></span>ใช้เครื่องมือ AI ที่องค์กรอนุมัติเท่านั้น</li>
-                    <li><span class="sq"></span>ตัดชื่อ เลขบัตร ข้อมูลลูกค้าออกก่อนใช้</li>
-                    <li><span class="sq"></span>ตรวจคำตอบของ AI ก่อนนำไปใช้จริง</li>
-                    <li><span class="sq"></span>ไม่แน่ใจ ถามฝ่าย IT / Security</li>
-                </ul>
-            </div>
-            <div class="col no reveal" style="--d:.2s">
-                <h3><i>✕</i>ห้ามทำ</h3>
-                <ul>
-                    <li><span class="sq"></span>วางข้อมูลลูกค้าในแชตบอทสาธารณะ</li>
-                    <li><span class="sq"></span>อัปโหลดสัญญาหรือเอกสารภายใน</li>
-                    <li><span class="sq"></span>ติดตั้งส่วนขยาย AI ที่ไม่ได้รับอนุญาต</li>
-                    <li><span class="sq"></span>ให้ AI เข้าถึงอีเมลหรือไดรฟ์บริษัทเอง</li>
-                </ul>
-            </div>
+            <div class="col no reveal" style="--d:0.10s"><h3><i>!</i>สัญญาณที่ต้องระวัง</h3><ul><li><span class="sq"></span>ขอให้โอนเงินหรือส่งข้อมูลด่วน</li><li><span class="sq"></span>ขอให้เก็บเป็นความลับ ห้ามบอกใคร</li><li><span class="sq"></span>ภาพหรือเสียงแปลก ปากไม่ตรงเสียง</li><li><span class="sq"></span>อ้างว่ากล้องหรือไมค์มีปัญหา</li></ul></div>
+            <div class="col yes reveal" style="--d:0.20s"><h3><i>✓</i>สิ่งที่ควรทำ</h3><ul><li><span class="sq"></span>วางสาย แล้วโทรกลับเบอร์ที่รู้จัก</li><li><span class="sq"></span>ถามเรื่องที่คนจริงเท่านั้นที่รู้</li><li><span class="sq"></span>ทำตามขั้นตอนอนุมัติปกติเสมอ</li><li><span class="sq"></span>แจ้งฝ่าย IT/Security เมื่อสงสัย</li></ul></div>
         </div>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 18 BREAK ============ -->
+<!-- ============ 23 AI PHISHING ============ -->
+<section class="slide">
+    <div class="top"><b>03</b> AI Threats</div>
+    <div class="frame">
+        <h2 class="reveal"><span class="en">AI Phishing</span>: เขียนเนียนขึ้น <em>และเจาะจงตัวบุคคลมากขึ้น</em></h2>
+        <div class="vs">
+            <div class="card reveal" style="--d:0.10s"><span class="n">Phishing แบบเดิม</span><q>เรียน ลูกค้าที่เคารพ บัญชีของท่านมีปันหา กรุณาคลิกที่นี้ด่วนที่สุดเพื่อยืนยันตัวตน มิฉะนั้นบัญชีจะถูกระงับ!!!</q><p>ภาษาแปลก สะกดผิด ทักทายแบบกว้าง ๆ</p></div>
+            <div class="card warn reveal" style="--d:0.20s"><span class="n">AI Phishing</span><q>สวัสดีครับคุณนภา ตามที่คุยกันในประชุมทีม Claims เมื่อวาน ผมแนบไฟล์สรุปเคสที่ต้องอนุมัติภายในวันนี้ไว้ในลิงก์นี้ครับ</q><p>ภาษาเป็นธรรมชาติ รู้ชื่อ ตำแหน่ง และบริบทงานจริง</p></div>
+        </div>
+        <div class="callout  reveal" style="--d:0.35s"><b>ดูให้ลึกกว่าภาษา:</b> ผู้ส่งเป็นใคร • ลิงก์พาไปที่ไหน • เขาขออะไรจากเรา</div>
+    </div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 24 SHADOW AI ============ -->
+<section class="slide">
+    <div class="top"><b>03</b> AI Threats</div>
+    <div class="frame withill w">
+        <h2 class="reveal"><span class="en">Shadow AI</span>: ใช้ AI <em>ที่บริษัทไม่ได้อนุญาต</em></h2>
+        <div class="kpi row reveal" style="--d:0.10s"><b>43%</b><span>ของเหตุด้านความปลอดภัย มีเครื่องมือ AI ที่ไม่ได้รับอนุญาตเข้ามาเกี่ยวข้อง</span></div>
+        <ul class="blist tight"><li class="reveal" style="--d:0.20s"><span>ข้อมูลที่ใส่เข้าไปอาจถูกเก็บไว้ หรือนำไปใช้พัฒนาโมเดล</span></li><li class="reveal" style="--d:0.28s"><span>เสี่ยงผิด PDPA หากเป็นข้อมูลส่วนบุคคลของลูกค้า</span></li><li class="reveal" style="--d:0.36s"><span>ส่วนขยาย (Extension) และแอป AI ปลอมอาจขโมยข้อมูล</span></li></ul>
+        <p class="v3src reveal" style="--d:0.50s">ที่มา: IBM Cost of a Data Breach Report 2026</p>
+    </div>
+    <div class="ill land pop" style="--d:0.20s"><img src="assets/img/ill-50.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 25 DATA NOT FOR PUBLIC AI ============ -->
+<section class="slide">
+    <div class="top"><b>03</b> AI Threats</div>
+    <div class="frame">
+        <h2 class="reveal">ข้อมูลที่<em>ไม่ควรใส่</em>ลงใน AI สาธารณะ</h2>
+        <div class="cards x" style="--c:3"><div class="card warn reveal" style="--d:0.10s"><h3 class="">ข้อมูลส่วนบุคคลของลูกค้า</h3><p>ชื่อ เลขบัตรประชาชน ที่อยู่</p></div><div class="card warn reveal" style="--d:0.15s"><h3 class="">เลขกรมธรรม์และสัญญา</h3><p>เงื่อนไข ผู้รับผลประโยชน์</p></div><div class="card warn reveal" style="--d:0.20s"><h3 class="">ข้อมูลสุขภาพและการเคลม</h3><p>ผลตรวจ ประวัติการรักษา</p></div><div class="card warn reveal" style="--d:0.25s"><h3 class="">ข้อมูลทางการเงิน</h3><p>เลขบัญชี บัตรเครดิต</p></div><div class="card warn reveal" style="--d:0.30s"><h3 class="">รหัสผ่านและข้อมูลระบบ</h3><p>API Key, Source Code</p></div><div class="card warn reveal" style="--d:0.35s"><h3 class="">เอกสารภายในที่เป็นความลับ</h3><p>แผนธุรกิจ สัญญา รายงานภายใน</p></div></div>
+    </div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 26 SAFE AI USE ============ -->
+<section class="slide">
+    <div class="top"><b>03</b> AI Threats</div>
+    <div class="frame">
+        <h2 class="reveal">ใช้ <span class="en">AI</span> ให้ปลอดภัย<em>ในการทำงาน</em></h2>
+        <div class="dodont">
+            <div class="col yes reveal" style="--d:0.10s"><h3><i>✓</i>ทำได้</h3><ul><li><span class="sq"></span>ใช้เครื่องมือ AI ที่บริษัทอนุมัติ</li><li><span class="sq"></span>ลบหรือปิดบังข้อมูลส่วนบุคคลก่อนใช้</li><li><span class="sq"></span>ตรวจทานผลลัพธ์ก่อนนำไปใช้เสมอ</li><li><span class="sq"></span>ปฏิบัติตามนโยบายการใช้ AI ของบริษัท</li></ul></div>
+            <div class="col no reveal" style="--d:0.20s"><h3><i>✕</i>ไม่ควรทำ</h3><ul><li><span class="sq"></span>วางข้อมูลลูกค้าหรือเอกสารลับลงใน AI สาธารณะ</li><li><span class="sq"></span>ติดตั้งแอปหรือ Extension AI เอง</li><li><span class="sq"></span>เชื่อผลลัพธ์ของ AI 100% โดยไม่ตรวจสอบ</li><li><span class="sq"></span>ใช้บัญชีส่วนตัวกับงานของบริษัท</li></ul></div>
+        </div>
+    </div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 27 BREAK ============ -->
 <section data-shader="silk" class="slide">
     <div class="top">Break · 10.20 – 10.35</div>
-    <div class="statement reveal">พักรับประทาน<br><em>อาหารว่าง</em></div>
+    <div class="statement reveal">พักเบรก</div>
     <div class="side-stats">
-        <div class="stat reveal" style="--d:.2s"><b>15</b><span>นาที · กลับมาเจอกัน 10.35 น.</span></div>
-        <div class="stat reveal" style="--d:.35s" data-nocount><b>04</b><span>ต่อด้วย: ใช้งานแอปพลิเคชันและบัญชีอย่างปลอดภัย</span></div>
+        <div class="stat reveal" style="--d:0.20s"><b>15<small>นาที</small></b><span>10.20 – 10.35 น.</span></div>
+        <div class="stat reveal" style="--d:0.35s" data-nocount><b>06</b><span>กลับมาพบกับ Workshop<br>ฝึกจับผิดอีเมล Phishing</span></div>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 19 APPS & ACCOUNTS ============ -->
+<!-- ============ 28 OPENER 04 ============ -->
+<section data-shader="silk" class="slide v3-open">
+    <div class="top"><b>04</b> Apps &amp; Accounts</div>
+    <div class="opener-num pop">04</div>
+    <div class="opener-title"><h2 class="reveal" style="--d:0.10s">การใช้งานแอปพลิเคชันและบัญชีผู้ใช้งานอย่างปลอดภัย</h2><p class="reveal" style="--d:0.20s">บัญชีงาน • มือถือ • โซเชียล • Cloud</p></div>
+    <div class="opener-ill pop" style="--d:0.25s"><img src="assets/img/ill-55.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 29 WORK VS PERSONAL ACCOUNTS ============ -->
 <section class="slide">
     <div class="top"><b>04</b> Apps &amp; Accounts</div>
     <div class="frame">
-        <h2 class="reveal">ใช้แอปและบัญชี<em>อย่างปลอดภัย</em></h2>
-        <ol class="rows tight">
-            <li class="reveal" style="--d:.10s"><b>01</b><h3>แยกบัญชีงาน–ส่วนตัว</h3><p>ไม่ใช้อีเมลบริษัทสมัครบริการส่วนตัว ไม่ส่งไฟล์งานเข้าบัญชีส่วนตัว</p></li>
-            <li class="reveal" style="--d:.16s"><b>02</b><h3>ตรวจ Permission ของแอป</h3><p>แอปไฟฉายไม่จำเป็นต้องขอรายชื่อ ข้อความ หรือสิทธิ์ Accessibility</p></li>
-            <li class="reveal" style="--d:.22s"><b>03</b><h3>ตั้งค่าความเป็นส่วนตัว</h3><p>Social Media / LINE: ปิดการค้นหาด้วย ID หรือเบอร์ ซ่อนข้อมูลส่วนตัว</p></li>
-            <li class="reveal" style="--d:.28s"><b>04</b><h3>แชร์ไฟล์บน Cloud</h3><p>แชร์เฉพาะบุคคล เลี่ยง “Anyone with the link” และตั้งวันหมดอายุ</p></li>
-            <li class="reveal" style="--d:.34s"><b>05</b><h3>Log out &amp; ตรวจประวัติ</h3><p>ออกจากระบบบนเครื่องอื่นทุกครั้ง ตรวจรายการอุปกรณ์ที่ล็อกอินอยู่เป็นประจำ</p></li>
-        </ol>
+        <h2 class="reveal">แยกบัญชีงานและบัญชีส่วนตัว<em>ออกจากกัน</em></h2>
+        <div class="cards tall split" style="--c:2"><div class="card ok reveal" style="--d:0.10s"><h3 class="">บัญชีงาน</h3><p>อีเมลและระบบของบริษัท</p><ul><li>ใช้กับงานของบริษัทเท่านั้น</li><li>เปิด MFA ตามนโยบาย</li><li>เก็บไฟล์ในพื้นที่ที่บริษัทจัดให้</li></ul></div><div class="card warn reveal" style="--d:0.20s"><h3 class="">บัญชีส่วนตัว</h3><p>Gmail, Facebook, LINE ส่วนตัว</p><ul><li>ไม่ใช้สมัครระบบหรือส่งงาน</li><li>ไม่ส่งต่อไฟล์งานมาเก็บ</li><li>ใช้รหัสผ่านต่างจากบัญชีงาน</li></ul></div></div>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 20 DOWNLOAD CHECKLIST ============ -->
+<!-- ============ 30 APP PERMISSIONS ============ -->
+<section class="slide">
+    <div class="top"><b>04</b> Apps &amp; Accounts</div>
+    <div class="frame withill">
+        <h2 class="reveal">ตรวจสอบสิทธิ์ (Permission) <em>ที่แอปบนมือถือขอเข้าถึง</em></h2>
+        <p class="lead reveal" style="--d:0.06s">แอปไฟฉาย ขอเข้าถึงรายชื่อผู้ติดต่อ… แปลกไหม?</p>
+        <div class="cards sm" style="--c:2"><div class="card warn reveal" style="--d:0.10s"><h3 class="">SMS / การแจ้งเตือน</h3><p>อ่าน OTP ได้ → ถูกนำไปใช้ยืนยันธุรกรรม</p></div><div class="card warn reveal" style="--d:0.16s"><h3 class="">Accessibility / ควบคุมหน้าจอ</h3><p>แอปดูดเงินใช้สิทธิ์นี้ควบคุมมือถือจากระยะไกล</p></div><div class="card warn reveal" style="--d:0.22s"><h3 class="">รายชื่อผู้ติดต่อ / รูปภาพ</h3><p>ข้อมูลลูกค้าและเพื่อนร่วมงานรั่วไหลได้</p></div><div class="card ok reveal" style="--d:0.28s"><h3 class="">ตรวจสอบเป็นประจำ</h3><p>ปิดสิทธิ์ที่ไม่จำเป็น และลบแอปที่ไม่ได้ใช้</p></div></div>
+    </div>
+    <div class="ill  pop" style="--d:0.20s"><img src="assets/img/ill-58.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 31 SOCIAL PRIVACY ============ -->
+<section class="slide">
+    <div class="top"><b>04</b> Apps &amp; Accounts</div>
+    <div class="frame withill">
+        <h2 class="reveal">ความเป็นส่วนตัว<em>บนโซเชียลมีเดียและ LINE</em></h2>
+        <ul class="blist "><li class="reveal" style="--d:0.10s"><span><b>ไม่โพสต์</b> บัตรพนักงาน หน้าจอคอมพิวเตอร์ เอกสาร หรือไวท์บอร์ดในที่ทำงาน</span></li><li class="reveal" style="--d:0.18s"><span><b>ตั้งค่าโปรไฟล์</b> ให้เห็นเฉพาะเพื่อน และซ่อนข้อมูลที่ทำงาน วันเกิด เบอร์โทร</span></li><li class="reveal" style="--d:0.26s"><span><b>LINE:</b> ปิดการให้คนอื่นเพิ่มเพื่อนด้วย ID หรือเบอร์โทร และระวังกลุ่มหรือบัญชีทางการปลอม</span></li><li class="reveal" style="--d:0.34s"><span><b>ไม่ส่งข้อมูลลูกค้า</b> ผ่านแชตส่วนตัว ให้ใช้ช่องทางที่บริษัทกำหนด</span></li></ul>
+    </div>
+    <div class="ill sq pop" style="--d:0.20s"><img src="assets/img/ill-63.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 32 CLOUD SHARING & SESSIONS ============ -->
+<section class="slide">
+    <div class="top"><b>04</b> Apps &amp; Accounts</div>
+    <div class="frame">
+        <h2 class="reveal">แชร์ไฟล์บน <span class="en">Cloud</span> <em>และดูแลการเข้าใช้งานบัญชี</em></h2>
+        <div class="cards tall" style="--c:2"><div class="card  reveal" style="--d:0.10s"><span class="n">01</span><h3 class="">แชร์ไฟล์บน Cloud อย่างปลอดภัย</h3><ul><li>แชร์เฉพาะคนที่จำเป็น ไม่ใช้ “Anyone with the link”</li><li>ตั้งวันหมดอายุของลิงก์ และสิทธิ์ “ดูอย่างเดียว”</li><li>ใช้ Cloud ที่บริษัทอนุมัติเท่านั้น</li></ul></div><div class="card  reveal" style="--d:0.20s"><span class="n">02</span><h3 class="">ออกจากระบบและตรวจประวัติ</h3><ul><li>Log out ทุกครั้งเมื่อใช้เครื่องสาธารณะหรือเครื่องคนอื่น</li><li>ตรวจ “อุปกรณ์ที่เข้าสู่ระบบ” เป็นระยะ</li><li>เจอการเข้าใช้ที่ไม่รู้จัก ให้เปลี่ยนรหัสผ่านและแจ้ง IT</li></ul></div></div>
+    </div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 33 OPENER 05 ============ -->
+<section data-shader="silk" class="slide v3-open">
+    <div class="top"><b>05</b> Download &amp; MFA</div>
+    <div class="opener-num pop">05</div>
+    <div class="opener-title"><h2 class="reveal" style="--d:0.10s">การตรวจสอบก่อนดาวน์โหลดหรือติดตั้ง และการใช้งาน MFA</h2><p class="reveal" style="--d:0.20s">แอปปลอม • ไฟล์แนบ • ลิงก์ • MFA</p></div>
+    <div class="opener-ill pop" style="--d:0.25s"><img src="assets/img/ill-66.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 34 TRUSTED SOURCES ============ -->
+<section class="slide">
+    <div class="top"><b>05</b> Download &amp; MFA</div>
+    <div class="frame withill">
+        <h2 class="reveal">ดาวน์โหลดจากแหล่งที่เชื่อถือได้ <em>และสังเกตแอปปลอม</em></h2>
+        <ul class="blist "><li class="reveal" style="--d:0.10s"><span>ติดตั้งจาก <b>App Store / Google Play</b> หรือ <b>Software Center</b> ของบริษัทเท่านั้น</span></li><li class="reveal" style="--d:0.18s"><span>ไม่ติดตั้งไฟล์ <b>.APK</b> ที่ส่งมาทาง LINE, SMS หรืออีเมล</span></li><li class="reveal" style="--d:0.26s"><span>ดูชื่อผู้พัฒนา จำนวนดาวน์โหลด และรีวิว ก่อนติดตั้ง</span></li><li class="reveal" style="--d:0.34s"><span><b>คอมพิวเตอร์บริษัท:</b> ไม่ติดตั้งโปรแกรมเอง ให้แจ้ง IT</span></li></ul>
+    </div>
+    <div class="ill sq pop" style="--d:0.20s"><img src="assets/img/ill-67.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 35 ATTACHMENTS & LINKS ============ -->
 <section class="slide">
     <div class="top"><b>05</b> Download &amp; MFA</div>
     <div class="frame">
-        <h2 class="reveal">ตรวจสอบ<em>ก่อนดาวน์โหลด</em>หรือติดตั้ง</h2>
-        <div class="checks">
-            <div class="check reveal" style="--d:.1s"><h3>แหล่งที่เชื่อถือได้</h3><ul>
-                <li><div><b>App Store / Google Play / เว็บทางการ</b><span>พิมพ์ URL เอง ไม่คลิกจากโฆษณา</span></div></li>
-                <li><div><b>ไม่ติดตั้งไฟล์จากแชต</b><span>เช่น ไฟล์ .apk ที่ส่งมาทาง LINE / SMS</span></div></li>
-                <li><div><b>เครื่องบริษัท ขอ IT ก่อน</b><span>ติดตั้งเฉพาะโปรแกรมที่ได้รับอนุมัติ</span></div></li>
-            </ul></div>
-            <div class="check reveal" style="--d:.2s"><h3>สังเกตแอปปลอม</h3><ul>
-                <li><div><b>ชื่อผู้พัฒนา</b><span>ตรงกับบริษัทเจ้าของแอปจริงหรือไม่</span></div></li>
-                <li><div><b>ยอดดาวน์โหลด &amp; รีวิว</b><span>แอปใหม่ รีวิวน้อย หรือรีวิวไม่เป็นธรรมชาติ</span></div></li>
-                <li><div><b>ขอสิทธิ์เกินจำเป็น</b><span>โดยเฉพาะ Accessibility / ควบคุมหน้าจอ</span></div></li>
-            </ul></div>
-            <div class="check warn reveal" style="--d:.3s"><h3 class="warn">ไฟล์แนบ &amp; ลิงก์อันตราย</h3><ul>
-                <li><div><b>ไฟล์ที่ไม่ได้คาดหวัง</b><span class="mono">.exe · .zip · .apk · .docm</span></div></li>
-                <li><div><b>URL สะกดเพี้ยน</b><span class="mono">a1phasec.co.th · alphasec-login.net</span></div></li>
-                <li><div><b>ลิงก์ย่อ / QR ไม่ทราบที่มา</b><span>ตรวจปลายทางก่อนเปิดเสมอ</span></div></li>
-            </ul></div>
+        <h2 class="reveal">ไฟล์แนบและลิงก์อันตราย <em>สังเกตอย่างไร</em></h2>
+        <div class="cards tall" style="--c:2">
+            <div class="card warn reveal" style="--d:0.10s"><span class="n">01</span><h3>ไฟล์แนบที่ต้องระวัง</h3><div class="exts"><span>.exe</span><span>.scr</span><span>.js</span><span>.html</span><span>.iso</span><span>.zip (มีรหัส)</span><span>.docm / .xlsm</span></div><ul><li>ไม่คาดหมายว่าจะได้รับ = อย่าเพิ่งเปิด</li><li>ไฟล์ Office ที่ขอให้กด “Enable Content” = อันตราย</li></ul></div>
+<div class="card  reveal" style="--d:0.20s"><span class="n">02</span><h3 class="">ลิงก์และ QR Code</h3><ul><li>เอาเมาส์ชี้ค้างก่อนคลิก (Hover) เพื่อดู URL จริง</li><li>ระวังลิงก์ย่อ เช่น bit.ly ที่ซ่อนปลายทาง</li><li>QR Code ในอีเมลหรือป้ายแปลก ๆ อาจพาไปเว็บปลอม</li><li>พิมพ์ชื่อเว็บไซต์เองดีกว่าคลิกลิงก์</li></ul></div>
         </div>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 21 MFA LADDER ============ -->
+<!-- ============ 36 MFA FACTORS ============ -->
 <section class="slide">
     <div class="top"><b>05</b> Download &amp; MFA</div>
     <div class="frame">
-        <h2 class="reveal">เปิด <span class="en">MFA</span> ปลอดภัยขึ้น <em class="en">99%</em></h2>
-        <p class="lead reveal" style="--d:.1s">เพิ่มการยืนยันอีกชั้น แม้รหัสผ่านหลุด ก็ยังเข้าบัญชีไม่ได้</p>
+        <h2 class="reveal"><span class="en">MFA</span> คืออะไร: <em>ยืนยันตัวตนมากกว่า 1 ปัจจัย</em></h2>
+        <div class="factors"><div class="card reveal" style="--d:0.10s"><span class="n">01</span><h3>สิ่งที่คุณรู้</h3><p>รหัสผ่าน, PIN</p></div><i class="reveal" style="--d:0.16s">+</i><div class="card reveal" style="--d:0.20s"><span class="n">02</span><h3>สิ่งที่คุณมี</h3><p>มือถือ, Security Key</p></div><i class="reveal" style="--d:0.26s">+</i><div class="card reveal" style="--d:0.30s"><span class="n">03</span><h3>สิ่งที่เป็นคุณ</h3><p>ลายนิ้วมือ, ใบหน้า</p></div></div>
+        <div class="callout  reveal" style="--d:0.42s">ใช้ <b>2 ปัจจัยขึ้นไป</b>ร่วมกัน แม้รหัสผ่านรั่ว คนร้ายก็ยังเข้าบัญชีไม่ได้</div>
+    </div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 37 MFA TYPES ============ -->
+<section class="slide">
+    <div class="top"><b>05</b> Download &amp; MFA</div>
+    <div class="frame">
+        <h2 class="reveal">รูปแบบของ <span class="en">MFA</span>: <em>แบบไหนปลอดภัยกว่า</em></h2>
+        <p class="lead reveal" style="--d:0.10s">ปลอดภัยมากขึ้น →</p>
     </div>
     <div class="ladder">
-        <div class="rung reveal" style="--d:.15s"><h3>SMS OTP</h3><p>รหัสผ่าน SMS · เสี่ยงถูกหลอกขอ OTP</p><div class="blk" style="height:120px;--d:.3s">ปานกลาง</div></div>
-        <div class="rung reveal" style="--d:.25s"><h3>Authenticator App</h3><p>แอปสร้างรหัส / กดอนุมัติบนมือถือ</p><div class="blk" style="height:220px;--d:.45s">สูง</div></div>
-        <div class="rung best reveal" style="--d:.35s"><h3>Passkey / Security Key</h3><p>ผูกกับเว็บจริง กันเว็บปลอมได้</p><div class="blk" style="height:320px;--d:.6s">สูงมาก</div></div>
+        <div class="rung reveal" style="--d:0.15s"><h3>SMS OTP</h3><p>ดีกว่าไม่มี แต่ถูกหลอกขอ OTP หรือดักอ่าน SMS ได้</p><div class="blk" style="height:120px;--d:.3s">ระดับ 1</div></div>
+        <div class="rung reveal" style="--d:0.25s"><h3>Authenticator App</h3><p>รหัสหรือการแจ้งเตือนในแอป ควรใช้แบบจับคู่ตัวเลข</p><div class="blk" style="height:220px;--d:.45s">ระดับ 2</div></div>
+        <div class="rung best reveal" style="--d:0.35s"><h3>Passkey / Security Key</h3><p>ผูกกับเว็บไซต์จริง กันหน้าเว็บปลอมได้</p><div class="blk" style="height:320px;--d:.6s">ระดับ 3</div></div>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 22 MFA FATIGUE ============ -->
+<!-- ============ 38 MFA FATIGUE ============ -->
 <section class="slide">
     <div class="top"><b>05</b> Download &amp; MFA</div>
     <div class="frame">
-        <h2 class="reveal"><span class="en">MFA Fatigue</span>: กดรัวจน<em>เผลออนุมัติ</em></h2>
-        <div class="steps" style="margin-top:56px">
-            <div class="step reveal" style="--d:.10s"><b>01</b><h3>ได้รหัสผ่านไป</h3><p>จาก Phishing หรือรหัสผ่านที่รั่ว</p></div>
-            <div class="step reveal" style="--d:.18s"><b>02</b><h3>ส่งคำขอรัวๆ</h3><p>แจ้งเตือนอนุมัติเด้งซ้ำ มักเป็นช่วงดึก</p></div>
-            <div class="step reveal" style="--d:.26s"><b>03</b><h3>แอบอ้างเป็น IT</h3><p>“กดอนุมัติให้หน่อย จะได้หยุดเด้ง”</p></div>
-            <div class="step reveal" style="--d:.34s"><b>04</b><h3>เผลอกด Approve</h3><p>คนร้ายเข้าบัญชีได้ทันที</p></div>
-        </div>
-        <div class="defense reveal" style="--d:.5s">
-            <div class="lab">วิธีรับมือ</div>
-            <div><b>ไม่ได้ขอเอง = ปฏิเสธ</b>อย่ากดอนุมัติเพื่อให้หยุดเด้ง</div>
-            <div><b>ใช้ Number Matching</b>พิมพ์ตัวเลขที่แสดงบนหน้าจอ</div>
-            <div><b>แจ้ง IT ทันที</b>คำขอแปลกๆ แปลว่ารหัสหลุดแล้ว</div>
-            <div><b>เปลี่ยนรหัสผ่าน</b>ทำตามคำแนะนำของ IT</div>
-        </div>
+        <h2 class="reveal"><span class="en">MFA Fatigue</span>: ส่งคำขออนุมัติรัว ๆ <em>จนเรากดยอมรับ</em></h2>
+        <div class="steps v3steps"><div class="step reveal" style="--d:0.10s"><b>1</b><h3>คนร้ายได้รหัสผ่านไปแล้ว</h3></div><div class="step reveal" style="--d:0.18s"><b>2</b><h3>ส่งคำขอ MFA ซ้ำ ๆ ตอนดึกหรือช่วงยุ่ง</h3></div><div class="step reveal" style="--d:0.26s"><b>3</b><h3>โทร/ทักแชตอ้างเป็น IT ให้กด “อนุมัติ”</h3></div><div class="step reveal" style="--d:0.34s"><b>4</b><h3>เรากดยอมรับ = คนร้ายเข้าบัญชีได้</h3></div></div>
+        <div class="callout  reveal" style="--d:0.45s"><b>วิธีรับมือ</b> &nbsp; ไม่ได้ล็อกอินเอง → กด “ปฏิเสธ” เสมอ • เปลี่ยนรหัสผ่านทันที • แจ้งฝ่าย IT/Security</div>
+        <div class="callout warn reveal" style="--d:0.55s">IT จะไม่ขอให้คุณกดอนุมัติ MFA หรือขอรหัส OTP</div>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 23 OPENER 06 WORKSHOP ============ -->
-<section data-shader="silk" class="slide">
+<!-- ============ 39 OPENER 06 ============ -->
+<section data-shader="silk" class="slide v3-open">
     <div class="top"><b>06</b> Phishing Workshop</div>
     <div class="opener-num pop">06</div>
-    <div class="opener-title">
-        <h2 class="reveal" style="--d:.1s">ฝึกสังเกต <span class="en">Phishing</span></h2>
-        <p class="reveal" style="--d:.2s">Workshop: ดูอีเมลตัวอย่าง แล้วตัดสินว่าเป็น Phishing อีเมลปกติ หรือไม่แน่ใจ</p>
-    </div>
-    <div class="opener-stats">
-        <div class="stat reveal" style="--d:.25s"><b>3.4<small>พันล้าน</small></b><span>ฟิชชิ่งอีเมลต่อวันทั่วโลก</span></div>
-        <div class="stat reveal" style="--d:.35s"><b>36%</b><span>ของการโจมตีเริ่มต้นจาก Phishing</span></div>
-    </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="opener-title"><h2 class="reveal" style="--d:0.10s">Workshop: ฝึกสังเกตอีเมล Phishing</h2><p class="reveal" style="--d:0.20s">ดูให้เป็น • แยกให้ออก • รู้ว่าต้องทำอะไร</p></div>
+    <div class="opener-ill pop" style="--d:0.25s"><img src="assets/img/ill-73.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 24 PHISHING ANATOMY ============ -->
-<section class="slide">
+<!-- ============ 40 7 PHISHING SIGNS ============ -->
+<section class="slide v3-mail">
     <div class="top"><b>06</b> Phishing Workshop</div>
-    <div class="frame"><h2 class="reveal">จุดสังเกต: อีเมลนี้มี <em>4 จุด</em> ที่ผิดปกติ</h2></div>
-    <div class="mail reveal" style="--d:.15s">
-        <div class="bar"><i></i><i></i><i></i></div>
-        <div class="row"><span class="lbl">From</span><b>security@bank-secure-verify.net</b><span class="pin" style="right:-25px;top:12px">1</span></div>
-        <div class="row"><span class="lbl">Subject</span><b>ด่วนที่สุด! บัญชีของคุณถูกระงับ</b><span class="pin" style="right:-25px;top:12px">2</span></div>
-        <div class="body">
-            เรียน ลูกค้าผู้มีอุปการคุณ<br>
-            บัญชีของคุณถูกระงับเนื่องจากพบกิจกรรมที่น่าสงสัย กรุณายืนยันตัวตน<br>
-            พร้อมกรอกรหัสผ่านและ OTP ภายใน 24 ชั่วโมง ไม่เช่นนั้นบัญชีจะถูกปิดถาวร
-            <span class="pin" style="right:-25px;top:60px">4</span><br>
-            <span class="btn">คลิกที่นี่เพื่อยืนยันตัวตน<span class="pin" style="right:-70px;top:4px">3</span></span>
-        </div>
+    <div class="frame">
+        <h2 class="reveal"><em class="en">7</em> จุดสังเกตอีเมล <span class="en">Phishing</span></h2>
+
     </div>
-    <div class="flags">
-        <div class="flag reveal" style="--d:.30s"><span class="pin">1</span><div><h4>ชื่อและโดเมนผู้ส่ง</h4><p>โดเมนเลียนแบบ ไม่ใช่โดเมนทางการของธนาคาร</p></div></div>
-        <div class="flag reveal" style="--d:.38s"><span class="pin">2</span><div><h4>เร่งรัด ข่มขู่</h4><p>“ด่วนที่สุด!” “ภายใน 24 ชม.” ให้รีบจนไม่ทันคิด</p></div></div>
-        <div class="flag reveal" style="--d:.46s"><span class="pin">3</span><div><h4>ลิงก์ / ไฟล์แนบ</h4><p>Hover แล้วเจอ URL จริง<br><span style="white-space:nowrap">bank-secure-verify.net/login</span></p></div></div>
-        <div class="flag reveal" style="--d:.54s"><span class="pin">4</span><div><h4>ขอข้อมูลส่วนตัว</h4><p>รหัสผ่าน, OTP, เลขบัตร หน่วยงานจริงไม่ขอทางอีเมล</p></div></div>
-    </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="em  reveal" style="--d:0.12s"><div class="em-bar"><span>กล่องจดหมาย (Inbox)</span><i></i></div><div class="em-ext">[ภายนอก] อีเมลนี้ส่งมาจากภายนอกองค์กร โปรดระวังลิงก์และไฟล์แนบ</div><div class="em-sub">ด่วน! ยืนยันข้อมูลบัญชีเงินเดือนก่อน 17.00 น. วันนี้<span class="mk">2</span></div><div class="em-from"><span class="av">HR</span><div><b>HR Payroll</b> <span class="addr">&lt;payroll@bangk0klife.com&gt;</span><span class="mk">1</span><small>ถึง: คุณ &nbsp; • &nbsp; ศ. 27/11/2569 16:41</small></div></div><div class="em-body"><p>เรียน พนักงาน<span class="mk">3</span></p><p>เนื่องจากมีการปรับระบบเงินเดือนใหม่ หากไม่ยืนยันข้อมูลภายในวันนี้ เงินเดือนรอบนี้อาจล่าช้า<span class="mk">4</span> กรุณากรอกรหัสผ่านและเลขบัญชีเพื่อยืนยันตัวตน<span class="mk">7</span></p><span class="em-btn">ยืนยันข้อมูลบัญชี</span><span class="em-url">https://hr-bangkoklife.payroll-verify.net/login<span class="mk">5</span></span><span class="em-att">📎 Salary_Adjust_2570.html<span class="mk">6</span></span></div></div>
+    <ol class="signs"><li class="reveal" style="--d:0.25s"><b>1</b><div><h4>ผู้ส่ง</h4><p>ชื่อดูน่าเชื่อ แต่โดเมนสะกดผิด (bangk0klife)</p></div></li><li class="reveal" style="--d:0.30s"><b>2</b><div><h4>หัวเรื่อง</h4><p>เร่งรัด มีกำหนดเวลา</p></div></li><li class="reveal" style="--d:0.35s"><b>3</b><div><h4>คำทักทาย</h4><p>กว้าง ๆ ไม่ระบุชื่อเรา</p></div></li><li class="reveal" style="--d:0.40s"><b>4</b><div><h4>เนื้อหา</h4><p>ข่มขู่ หรือล่อด้วยเรื่องเงิน</p></div></li><li class="reveal" style="--d:0.45s"><b>5</b><div><h4>ลิงก์</h4><p>URL จริงไม่ใช่โดเมนบริษัท</p></div></li><li class="reveal" style="--d:0.50s"><b>6</b><div><h4>ไฟล์แนบ</h4><p>นามสกุลแปลก เช่น .html</p></div></li><li class="reveal" style="--d:0.55s"><b>7</b><div><h4>สิ่งที่ขอ</h4><p>รหัสผ่าน OTP ข้อมูลบัญชี หรือเงิน</p></div></li></ol>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 25 WORKSHOP: VOTE ============ -->
+<!-- ============ 41 SENDER DOMAINS ============ -->
 <section class="slide">
     <div class="top"><b>06</b> Phishing Workshop</div>
     <div class="frame">
-        <h2 class="reveal">กิจกรรม: อีเมลไหน<em>เป็น Phishing?</em></h2>
-        <div class="inbox">
-            <div class="mini reveal" style="--d:.10s">
-                <div class="hd"><b>A</b><i></i></div>
-                <div class="row"><span class="lbl">From</span><b>HR Department &lt;hr@company-benefits.co&gt;</b></div>
-                <div class="row"><span class="lbl">Subject</span><b>ด่วน: ยืนยันข้อมูลเพื่อรับโบนัสสิ้นปี</b></div>
-                <div class="body">เรียน พนักงานทุกท่าน<br>กรุณาเข้าสู่ระบบด้วยบัญชีบริษัทภายในวันนี้ 17.00 น. มิฉะนั้นจะไม่ได้รับโบนัสรอบนี้<br><span class="link">เข้าสู่ระบบ HR Portal</span></div>
-                <div class="vote"><span>Phishing</span><span>ปกติ</span><span>ไม่แน่ใจ</span></div>
-            </div>
-            <div class="mini reveal" style="--d:.18s">
-                <div class="hd"><b>B</b><i></i></div>
-                <div class="row"><span class="lbl">From</span><b>IT Service Desk &lt;it-support@company.co.th&gt;</b></div>
-                <div class="row"><span class="lbl">Subject</span><b>ปิดปรับปรุงระบบอีเมล 5 ธ.ค. 22.00–24.00 น.</b></div>
-                <div class="body">ระหว่างปรับปรุงอาจรับ-ส่งอีเมลไม่ได้ชั่วคราว ท่านไม่ต้องดำเนินการใดๆ<br>สอบถามเพิ่มเติมได้ที่ IT Service Desk ตามช่องทางปกติ</div>
-                <div class="vote"><span>Phishing</span><span>ปกติ</span><span>ไม่แน่ใจ</span></div>
-            </div>
-            <div class="mini reveal" style="--d:.26s">
-                <div class="hd"><b>C</b><i></i></div>
-                <div class="row"><span class="lbl">From</span><b>คุณสมชาย (CEO) &lt;ceo.office.th@gmail.com&gt;</b></div>
-                <div class="row"><span class="lbl">Subject</span><b>ขอความช่วยเหลือเร่งด่วน</b></div>
-                <div class="body">ผมติดประชุมอยู่ รับโทรศัพท์ไม่ได้ ช่วยซื้อบัตรของขวัญ 10 ใบ ใบละ 5,000 บาท แล้วส่งรหัสบัตรกลับมาทางอีเมลนี้ เรื่องนี้ขอเป็นความลับก่อนนะ</div>
-                <div class="vote"><span>Phishing</span><span>ปกติ</span><span>ไม่แน่ใจ</span></div>
-            </div>
-        </div>
+        <h2 class="reveal">ตรวจโดเมนผู้ส่ง: <em>หน้าตาคล้าย แต่ไม่ใช่</em></h2>
+        <div class="doms"><div class="dom ok reveal" style="--d:0.10s"><i>✓</i><code>someone@<u>bangkoklife.com</u></code><span>โดเมนจริงของบริษัท</span></div><div class="dom  reveal" style="--d:0.16s"><i>✕</i><code>someone@bangk<u>0</u>klife.com</code><span>เลข 0 แทนตัว o</span></div><div class="dom  reveal" style="--d:0.22s"><i>✕</i><code>someone@bangkok<u>I</u>ife.com</code><span>ตัว I (ไอใหญ่) แทน l (แอลเล็ก)</span></div><div class="dom  reveal" style="--d:0.28s"><i>✕</i><code>someone@bangkoklife<u>-support</u>.com</code><span>เติมคำต่อท้ายให้ดูเป็นทางการ</span></div><div class="dom  reveal" style="--d:0.34s"><i>✕</i><code>someone@bangkoklife<u>.co</u></code><span>เปลี่ยนนามสกุลโดเมน (.co)</span></div><div class="dom  reveal" style="--d:0.40s"><i>✕</i><code>“BLA IT” &lt;bla.it@<u>outlook.com</u>&gt;</code><span>ชื่อที่แสดงถูก แต่ใช้อีเมลฟรี</span></div></div>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 26 WORKSHOP: ANSWERS ============ -->
+<!-- ============ 42 READ THE URL ============ -->
 <section class="slide">
     <div class="top"><b>06</b> Phishing Workshop</div>
     <div class="frame">
-        <h2 class="reveal">เฉลย<em>และจุดสังเกต</em></h2>
-        <div class="checks ans">
-            <div class="check warn reveal" style="--d:.1s"><h3 class="warn"><span class="v">A</span>Phishing</h3><ul>
-                <li><div><b>โดเมนเลียนแบบ</b><span class="mono">company-benefits.co ≠ company.co.th</span></div></li>
-                <li><div><b>เร่งรัด + ให้ล็อกอิน</b><span>ขู่ว่าจะไม่ได้โบนัส เพื่อขโมยรหัสผ่าน</span></div></li>
-            </ul></div>
-            <div class="check reveal" style="--d:.2s"><h3><span class="v">B</span>อีเมลปกติ</h3><ul>
-                <li><div><b>โดเมนบริษัทจริง</b><span>ไม่มีลิงก์ ไม่มีไฟล์แนบ ไม่ขอข้อมูล</span></div></li>
-                <li><div><b>ยังสงสัย?</b><span>ถาม IT ตามช่องทางที่รู้จักอยู่แล้ว</span></div></li>
-            </ul></div>
-            <div class="check warn reveal" style="--d:.3s"><h3 class="warn"><span class="v">C</span>Phishing (BEC)</h3><ul>
-                <li><div><b>Gmail แอบอ้างผู้บริหาร</b><span>ผู้บริหารจริงใช้อีเมลบริษัท</span></div></li>
-                <li><div><b>บัตรของขวัญ + ขอเป็นความลับ</b><span>รูปแบบ BEC ที่พบบ่อยที่สุด</span></div></li>
-            </ul></div>
-        </div>
-        <div class="defense reveal" style="--d:.45s">
-            <div class="lab">ไม่แน่ใจ?</div>
-            <div><b>อย่าคลิก อย่าตอบกลับ</b>และอย่าเปิดไฟล์แนบ</div>
-            <div><b>ตรวจสอบช่องทางอื่น</b>โทรหาผู้ส่งตามเบอร์ที่รู้จัก</div>
-            <div><b>กด Report Phishing</b>ส่งให้ทีม IT / Security ตรวจ</div>
-            <div><b>อย่าส่งต่อ</b>ให้เพื่อนร่วมงานช่วยดู</div>
-        </div>
+        <h2 class="reveal">อ่าน <span class="en">URL</span> ให้เป็น: <em>ดูโดเมนหลักก่อนเครื่องหมาย / ตัวแรก</em></h2>
+        <div class="urlbox ok reveal" style="--d:0.10s"><i>✓</i><code>https://www.<b>bangkoklife.com</b>/th/customer-service</code><p>เจ้าของเว็บคือ <b>bangkoklife.com</b> &nbsp;ส่วนท้ายหลัง / เป็นแค่หน้าย่อยในเว็บ</p></div>
+        <div class="urlbox bad reveal" style="--d:0.20s"><i>✕</i><code>https://bangkoklife.com.<b>account-verify.co</b>/login</code><p>ชื่อบริษัทอยู่ด้านหน้าเพื่อหลอกตา แต่เจ้าของเว็บจริงคือ <b>account-verify.co</b></p></div>
+        <div class="callout  reveal" style="--d:0.35s"><b>บนมือถือ:</b> กดค้างที่ลิงก์เพื่อดู URL &nbsp;•&nbsp; <b>บนคอมพิวเตอร์:</b> เอาเมาส์ชี้ค้าง (Hover)</div>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 27 CASE STUDIES ============ -->
+<!-- ============ 43 ACTIVITY ============ -->
 <section class="slide">
-    <div class="top"><b>07</b> Case Studies</div>
+    <div class="top"><b>06</b> Phishing Workshop</div>
     <div class="frame">
-        <h2 class="reveal">กรณีศึกษา: <em>พลาดครั้งเดียว</em> กระทบทั้งองค์กร</h2>
-        <div class="cases">
-            <div class="case reveal" style="--d:.10s">
-                <span class="tag">Case 01 · สถานการณ์ตัวอย่าง</span>
-                <h3>คลิกลิงก์ Phishing</h3>
-                <p>พนักงานกรอกรหัสผ่านในหน้า Login ปลอม คนร้ายใช้อีเมลนั้นส่ง Phishing ต่อให้ลูกค้าและเพื่อนร่วมงาน</p>
-                <div class="lesson"><b>บทเรียน</b>ตรวจ URL ก่อนกรอกรหัสผ่าน และเปิด MFA ทุกบัญชี</div>
-            </div>
-            <div class="case reveal" style="--d:.18s">
-                <span class="tag">Case 02 · สถานการณ์ตัวอย่าง</span>
-                <h3>ติด Ransomware</h3>
-                <p>เปิดไฟล์แนบที่ดูเหมือนใบแจ้งหนี้ มัลแวร์เข้ารหัสไฟล์ในเครื่องและไดรฟ์ที่แชร์ร่วมกัน งานหยุดหลายวัน</p>
-                <div class="lesson"><b>บทเรียน</b>อย่าเปิดไฟล์แนบที่ไม่คาดหวัง และมี Backup ที่กู้คืนได้จริง</div>
-            </div>
-            <div class="case real reveal" style="--d:.26s">
-                <span class="tag">Case 03 · เหตุการณ์จริง 2024</span>
-                <h3>วิดีโอคอลปลอมเป็นผู้บริหาร</h3>
-                <p>พนักงานบริษัทวิศวกรรมสาขาฮ่องกง โอนเงินราว US$25M หลังประชุมวิดีโอกับ “CFO” และทีมงานที่สร้างด้วย Deepfake ทั้งหมด</p>
-                <div class="lesson"><b>บทเรียน</b>คำสั่งโอนเงินผิดปกติ ต้องยืนยันผ่านช่องทางอื่นเสมอ</div>
-            </div>
-        </div>
+        <h2 class="reveal">กิจกรรม: <em>อีเมลไหนเป็น Phishing?</em></h2>
+        <p class="lead reveal" style="--d:0.06s">ดูอีเมลตัวอย่าง 6 ฉบับ แล้วเลือกคำตอบ</p>
+        <div class="cards tall vote3" style="--c:3"><div class="card warn reveal" style="--d:0.10s"><h3 class="en">Phishing</h3><p>มีจุดผิดปกติชัดเจน ไม่ควรคลิกหรือตอบกลับ</p></div><div class="card ok reveal" style="--d:0.18s"><h3 class="">อีเมลปกติ</h3><p>มาจากต้นทางที่ถูกต้อง และไม่ได้ขอสิ่งที่ผิดปกติ</p></div><div class="card un reveal" style="--d:0.26s"><h3 class="">ไม่แน่ใจ</h3><p>ดูเหมือนจริง แต่มีบางอย่างที่ต้องตรวจสอบก่อน</p></div></div>
+        <div class="callout  reveal" style="--d:0.40s"><b>เช็กลิสต์:</b> ผู้ส่ง • หัวเรื่อง • คำทักทาย • เนื้อหา • ลิงก์ • ไฟล์แนบ • สิ่งที่ขอ</div>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 28 INCIDENT RESPONSE ============ -->
+<!-- ============ 44 EMAIL 1 · QUESTION ============ -->
+<section class="slide v3-mail">
+    <div class="top"><b>06</b> Phishing Workshop · Email 1/6</div>
+    <div class="frame">
+        <h2 class="reveal">อีเมลฉบับที่ 1: <em>Phishing, ปกติ หรือไม่แน่ใจ?</em></h2>
+
+    </div>
+    <div class="em  reveal" style="--d:0.12s"><div class="em-bar"><span>กล่องจดหมาย (Inbox)</span><i></i></div><div class="em-ext">[ภายนอก] อีเมลนี้ส่งมาจากภายนอกองค์กร โปรดระวังลิงก์และไฟล์แนบ</div><div class="em-sub">[ด่วน] รหัสผ่านอีเมลของคุณจะหมดอายุภายใน 24 ชั่วโมง</div><div class="em-from"><span class="av">IT</span><div><b>IT Service Desk</b> <span class="addr">&lt;it-support@bangkoklife-helpdesk.com&gt;</span><small>ถึง: คุณ &nbsp; • &nbsp; จ. 30/11/2569 08:12</small></div></div><div class="em-body"><p>เรียน ผู้ใช้งาน</p><p>ระบบตรวจพบว่ารหัสผ่านของคุณจะหมดอายุวันนี้ หากไม่ยืนยันบัญชีภายใน 24 ชั่วโมง บัญชีอีเมลของคุณจะถูกระงับการใช้งานทันที</p><span class="em-btn">ยืนยันบัญชีตอนนี้</span><span class="em-url">https://bangkoklife.com.account-verify.co/login</span><p class="sign">ฝ่ายเทคโนโลยีสารสนเทศ</p></div></div>
+    <div class="ask reveal" style="--d:.3s"><h3>คุณคิดว่าเป็น…</h3><div class="opts"><span class="o bad">Phishing</span><span class="o ok">อีเมลปกติ</span><span class="o un">ไม่แน่ใจ</span></div><p class="hint">ดู: ผู้ส่ง • หัวเรื่อง • ลิงก์<br>ไฟล์แนบ • สิ่งที่ขอ</p></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 45 EMAIL 1 · ANSWER ============ -->
+<section class="slide v3-mail">
+    <div class="top"><b>06</b> Phishing Workshop · Email 1/6</div>
+    <div class="frame">
+        <h2 class="reveal">เฉลยฉบับที่ 1</h2>
+
+    </div>
+    <div class="em bad reveal" style="--d:0.12s"><div class="em-bar"><span>กล่องจดหมาย (Inbox)</span><i></i></div><div class="em-ext">[ภายนอก] อีเมลนี้ส่งมาจากภายนอกองค์กร โปรดระวังลิงก์และไฟล์แนบ</div><div class="em-sub">[ด่วน] รหัสผ่านอีเมลของคุณจะหมดอายุภายใน 24 ชั่วโมง</div><div class="em-from"><span class="av">IT</span><div><b>IT Service Desk</b> <span class="addr">&lt;it-support@bangkoklife-helpdesk.com&gt;</span><span class="mk">1</span><small>ถึง: คุณ &nbsp; • &nbsp; จ. 30/11/2569 08:12</small></div></div><div class="em-body"><p>เรียน ผู้ใช้งาน<span class="mk">3</span></p><p>ระบบตรวจพบว่ารหัสผ่านของคุณจะหมดอายุวันนี้ หากไม่ยืนยันบัญชีภายใน 24 ชั่วโมง บัญชีอีเมลของคุณจะถูกระงับการใช้งานทันที<span class="mk">2</span></p><span class="em-btn">ยืนยันบัญชีตอนนี้</span><span class="em-url">https://bangkoklife.com.account-verify.co/login<span class="mk">4</span></span><p class="sign">ฝ่ายเทคโนโลยีสารสนเทศ</p></div></div>
+    <div class="ans bad reveal" style="--d:.3s"><div class="verdict">Phishing</div><ol class="pts"><li><b>1</b><span>โดเมนไม่ใช่ของบริษัท: bangkoklife-helpdesk.com และมีป้าย [ภายนอก]</span></li><li><b>2</b><span>ข่มขู่ว่าจะระงับบัญชี และเร่งให้ทำภายใน 24 ชม.</span></li><li><b>3</b><span>ทักทายกว้าง ๆ “เรียน ผู้ใช้งาน” ไม่ระบุชื่อ</span></li><li><b>4</b><span>ลิงก์จริงพาไป account-verify.co ไม่ใช่เว็บบริษัท</span></li></ol><div class="todo"><b>ควรทำอย่างไร</b>ไม่คลิก • แจ้งฝ่าย IT/Security • ถ้าสงสัยเรื่องรหัสผ่าน ให้ติดต่อ IT ผ่านช่องทางปกติ</div></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 46 EMAIL 2 · QUESTION ============ -->
+<section class="slide v3-mail">
+    <div class="top"><b>06</b> Phishing Workshop · Email 2/6</div>
+    <div class="frame">
+        <h2 class="reveal">อีเมลฉบับที่ 2: <em>Phishing, ปกติ หรือไม่แน่ใจ?</em></h2>
+
+    </div>
+    <div class="em  reveal" style="--d:0.12s"><div class="em-bar"><span>กล่องจดหมาย (Inbox)</span><i></i></div><div class="em-sub">กำหนดการอบรม Phishing Awareness &amp; Cybersecurity Essentials</div><div class="em-from"><span class="av">HR</span><div><b>ฝ่ายทรัพยากรบุคคล</b> <span class="addr">&lt;hr.communication@bangkoklife.com&gt;</span><small>ถึง: คุณ &nbsp; • &nbsp; จ. 23/11/2569 10:05</small></div></div><div class="em-body"><p>เรียน พนักงานทุกท่าน</p><p>ฝ่ายทรัพยากรบุคคลขอแจ้งกำหนดการอบรมหลักสูตร Phishing Awareness &amp; Cybersecurity Essentials ในวันจันทร์ที่ 30 พฤศจิกายน 2569 เวลา 09.00 – 12.00 น. ณ ห้องประชุมของบริษัท</p><p>รายละเอียดเพิ่มเติมดูได้ที่ Intranet ของบริษัท หรือสอบถามฝ่ายทรัพยากรบุคคลได้โดยตรง</p><p class="sign">ฝ่ายทรัพยากรบุคคล</p><p class="sign">บริษัท กรุงเทพประกันชีวิต จำกัด (มหาชน)</p></div></div>
+    <div class="ask reveal" style="--d:.3s"><h3>คุณคิดว่าเป็น…</h3><div class="opts"><span class="o bad">Phishing</span><span class="o ok">อีเมลปกติ</span><span class="o un">ไม่แน่ใจ</span></div><p class="hint">ดู: ผู้ส่ง • หัวเรื่อง • ลิงก์<br>ไฟล์แนบ • สิ่งที่ขอ</p></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 47 EMAIL 2 · ANSWER ============ -->
+<section class="slide v3-mail">
+    <div class="top"><b>06</b> Phishing Workshop · Email 2/6</div>
+    <div class="frame">
+        <h2 class="reveal">เฉลยฉบับที่ 2</h2>
+
+    </div>
+    <div class="em ok reveal" style="--d:0.12s"><div class="em-bar"><span>กล่องจดหมาย (Inbox)</span><i></i></div><div class="em-sub">กำหนดการอบรม Phishing Awareness &amp; Cybersecurity Essentials</div><div class="em-from"><span class="av">HR</span><div><b>ฝ่ายทรัพยากรบุคคล</b> <span class="addr">&lt;hr.communication@bangkoklife.com&gt;</span><span class="mk">1</span><small>ถึง: คุณ &nbsp; • &nbsp; จ. 23/11/2569 10:05</small></div></div><div class="em-body"><p>เรียน พนักงานทุกท่าน</p><p>ฝ่ายทรัพยากรบุคคลขอแจ้งกำหนดการอบรมหลักสูตร Phishing Awareness &amp; Cybersecurity Essentials ในวันจันทร์ที่ 30 พฤศจิกายน 2569 เวลา 09.00 – 12.00 น. ณ ห้องประชุมของบริษัท<span class="mk">2</span></p><p>รายละเอียดเพิ่มเติมดูได้ที่ Intranet ของบริษัท หรือสอบถามฝ่ายทรัพยากรบุคคลได้โดยตรง<span class="mk">3</span></p><p class="sign">ฝ่ายทรัพยากรบุคคล</p><p class="sign">บริษัท กรุงเทพประกันชีวิต จำกัด (มหาชน)</p></div></div>
+    <div class="ans ok reveal" style="--d:.3s"><div class="verdict">อีเมลปกติ</div><ol class="pts"><li><b>1</b><span>ส่งจากโดเมนบริษัท bangkoklife.com และไม่มีป้าย [ภายนอก]</span></li><li><b>2</b><span>เนื้อหาตรงกับกิจกรรมที่เรารู้อยู่แล้ว ไม่มีการเร่งรัด</span></li><li><b>3</b><span>ไม่มีลิงก์ให้ล็อกอิน ไม่ขอรหัสผ่าน และให้ไปตรวจสอบเองที่ Intranet</span></li></ol><div class="todo"><b>ควรทำอย่างไร</b>อีเมลปกติก็ยังควรระวัง ถ้ามีอะไรผิดสังเกต ให้ตรวจสอบกับต้นทางก่อนเสมอ</div></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 48 EMAIL 3 · QUESTION ============ -->
+<section class="slide v3-mail">
+    <div class="top"><b>06</b> Phishing Workshop · Email 3/6</div>
+    <div class="frame">
+        <h2 class="reveal">อีเมลฉบับที่ 3: <em>Phishing, ปกติ หรือไม่แน่ใจ?</em></h2>
+
+    </div>
+    <div class="em  reveal" style="--d:0.12s"><div class="em-bar"><span>กล่องจดหมาย (Inbox)</span><i></i></div><div class="em-ext">[ภายนอก] อีเมลนี้ส่งมาจากภายนอกองค์กร โปรดระวังลิงก์และไฟล์แนบ</div><div class="em-sub">งานด่วน – ขอความช่วยเหลือเป็นการส่วนตัว</div><div class="em-from"><span class="av">MD</span><div><b>สำนักกรรมการผู้จัดการ</b> <span class="addr">&lt;md.office.bla@gmail.com&gt;</span><small>ถึง: คุณ &nbsp; • &nbsp; อ. 01/12/2569 13:47</small></div></div><div class="em-body"><p>ตอนนี้ผมติดประชุมกับคู่ค้าอยู่ รับโทรศัพท์ไม่ได้</p><p>ช่วยโอนเงินมัดจำ 1,850,000 บาท ให้บริษัทคู่ค้าตามบัญชีด้านล่างภายในวันนี้ก่อน 15.00 น. เรื่องนี้ยังเป็นความลับ ห้ามแจ้งใครจนกว่าจะประกาศ</p><p><b>บัญชี: บจก. โกลบอล เทรด พาร์ทเนอร์ &nbsp; เลขที่ 123-4-56789-0</b></p><p>โอนแล้วส่งสลิปกลับมาที่อีเมลนี้นะครับ</p><p class="sign">ส่งจาก iPhone</p></div></div>
+    <div class="ask reveal" style="--d:.3s"><h3>คุณคิดว่าเป็น…</h3><div class="opts"><span class="o bad">Phishing</span><span class="o ok">อีเมลปกติ</span><span class="o un">ไม่แน่ใจ</span></div><p class="hint">ดู: ผู้ส่ง • หัวเรื่อง • ลิงก์<br>ไฟล์แนบ • สิ่งที่ขอ</p></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 49 EMAIL 3 · ANSWER ============ -->
+<section class="slide v3-mail">
+    <div class="top"><b>06</b> Phishing Workshop · Email 3/6</div>
+    <div class="frame">
+        <h2 class="reveal">เฉลยฉบับที่ 3</h2>
+
+    </div>
+    <div class="em bad reveal" style="--d:0.12s"><div class="em-bar"><span>กล่องจดหมาย (Inbox)</span><i></i></div><div class="em-ext">[ภายนอก] อีเมลนี้ส่งมาจากภายนอกองค์กร โปรดระวังลิงก์และไฟล์แนบ</div><div class="em-sub">งานด่วน – ขอความช่วยเหลือเป็นการส่วนตัว</div><div class="em-from"><span class="av">MD</span><div><b>สำนักกรรมการผู้จัดการ</b> <span class="addr">&lt;md.office.bla@gmail.com&gt;</span><span class="mk">1</span><small>ถึง: คุณ &nbsp; • &nbsp; อ. 01/12/2569 13:47</small></div></div><div class="em-body"><p>ตอนนี้ผมติดประชุมกับคู่ค้าอยู่ รับโทรศัพท์ไม่ได้</p><p>ช่วยโอนเงินมัดจำ 1,850,000 บาท ให้บริษัทคู่ค้าตามบัญชีด้านล่างภายในวันนี้ก่อน 15.00 น. เรื่องนี้ยังเป็นความลับ ห้ามแจ้งใครจนกว่าจะประกาศ<span class="mk">2</span></p><p><b>บัญชี: บจก. โกลบอล เทรด พาร์ทเนอร์ &nbsp; เลขที่ 123-4-56789-0</b><span class="mk">3</span></p><p>โอนแล้วส่งสลิปกลับมาที่อีเมลนี้นะครับ</p><p class="sign">ส่งจาก iPhone</p></div></div>
+    <div class="ans bad reveal" style="--d:.3s"><div class="verdict">Phishing</div><ol class="pts"><li><b>1</b><span>ใช้ชื่อผู้บริหาร แต่ส่งจาก Gmail</span></li><li><b>2</b><span>เร่งด่วน + เป็นความลับ + ติดต่อกลับไม่ได้ = รูปแบบ CEO Fraud</span></li><li><b>3</b><span>ให้โอนเข้าบัญชีใหม่ ข้ามขั้นตอนอนุมัติปกติ</span></li></ol><div class="todo"><b>ควรทำอย่างไร</b>ห้ามโอน • โทรยืนยันกับผู้บริหารหรือเลขานุการด้วยเบอร์ที่รู้จัก • แจ้งฝ่าย IT/Security และฝ่ายการเงิน</div></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 50 EMAIL 4 · QUESTION ============ -->
+<section class="slide v3-mail">
+    <div class="top"><b>06</b> Phishing Workshop · Email 4/6</div>
+    <div class="frame">
+        <h2 class="reveal">อีเมลฉบับที่ 4: <em>Phishing, ปกติ หรือไม่แน่ใจ?</em></h2>
+
+    </div>
+    <div class="em  reveal" style="--d:0.12s"><div class="em-bar"><span>กล่องจดหมาย (Inbox)</span><i></i></div><div class="em-ext">[ภายนอก] อีเมลนี้ส่งมาจากภายนอกองค์กร โปรดระวังลิงก์และไฟล์แนบ</div><div class="em-sub">พัสดุของคุณถูกระงับการจัดส่ง – กรุณาชำระค่าธรรมเนียม</div><div class="em-from"><span class="av">TE</span><div><b>ThaiExpress Delivery</b> <span class="addr">&lt;notify@thaiexpress-parcel.top&gt;</span><small>ถึง: คุณ &nbsp; • &nbsp; พ. 02/12/2569 09:30</small></div></div><div class="em-body"><p>เรียน ลูกค้า</p><p>พัสดุหมายเลข TE58204417TH จัดส่งไม่ได้เนื่องจากที่อยู่ไม่ครบถ้วน กรุณาอัปเดตที่อยู่และชำระค่าจัดส่งใหม่ 25 บาท ภายใน 12 ชั่วโมง มิฉะนั้นพัสดุจะถูกตีกลับ</p><span class="em-btn">อัปเดตที่อยู่และชำระเงิน</span><span class="em-url">http://thaiexpress-th.parcel-fee.top/pay</span><p class="sign">© ThaiExpress Delivery</p></div></div>
+    <div class="ask reveal" style="--d:.3s"><h3>คุณคิดว่าเป็น…</h3><div class="opts"><span class="o bad">Phishing</span><span class="o ok">อีเมลปกติ</span><span class="o un">ไม่แน่ใจ</span></div><p class="hint">ดู: ผู้ส่ง • หัวเรื่อง • ลิงก์<br>ไฟล์แนบ • สิ่งที่ขอ</p></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 51 EMAIL 4 · ANSWER ============ -->
+<section class="slide v3-mail">
+    <div class="top"><b>06</b> Phishing Workshop · Email 4/6</div>
+    <div class="frame">
+        <h2 class="reveal">เฉลยฉบับที่ 4</h2>
+
+    </div>
+    <div class="em bad reveal" style="--d:0.12s"><div class="em-bar"><span>กล่องจดหมาย (Inbox)</span><i></i></div><div class="em-ext">[ภายนอก] อีเมลนี้ส่งมาจากภายนอกองค์กร โปรดระวังลิงก์และไฟล์แนบ</div><div class="em-sub">พัสดุของคุณถูกระงับการจัดส่ง – กรุณาชำระค่าธรรมเนียม</div><div class="em-from"><span class="av">TE</span><div><b>ThaiExpress Delivery</b> <span class="addr">&lt;notify@thaiexpress-parcel.top&gt;</span><span class="mk">1</span><small>ถึง: คุณ &nbsp; • &nbsp; พ. 02/12/2569 09:30</small></div></div><div class="em-body"><p>เรียน ลูกค้า</p><p>พัสดุหมายเลข TE58204417TH จัดส่งไม่ได้เนื่องจากที่อยู่ไม่ครบถ้วน กรุณาอัปเดตที่อยู่และชำระค่าจัดส่งใหม่ 25 บาท ภายใน 12 ชั่วโมง มิฉะนั้นพัสดุจะถูกตีกลับ<span class="mk">2</span></p><span class="em-btn">อัปเดตที่อยู่และชำระเงิน</span><span class="em-url">http://thaiexpress-th.parcel-fee.top/pay<span class="mk">3</span></span><p class="sign">© ThaiExpress Delivery</p></div></div>
+    <div class="ans bad reveal" style="--d:.3s"><div class="verdict">Phishing</div><ol class="pts"><li><b>1</b><span>โดเมนแปลก .top และไม่ใช่เว็บไซต์ทางการ</span></li><li><b>2</b><span>ขอเงินจำนวนน้อย เพื่อหลอกเอาข้อมูลบัตร และให้เวลาแค่ 12 ชม.</span></li><li><b>3</b><span>ลิงก์เป็น http:// และไปคนละโดเมนกับผู้ส่ง</span></li></ol><div class="todo"><b>ควรทำอย่างไร</b>ไม่คลิก • ถ้ารอพัสดุอยู่จริง ให้เช็กสถานะในแอปหรือเว็บไซต์ทางการของบริษัทขนส่งเอง</div></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 52 EMAIL 5 · QUESTION ============ -->
+<section class="slide v3-mail">
+    <div class="top"><b>06</b> Phishing Workshop · Email 5/6</div>
+    <div class="frame">
+        <h2 class="reveal">อีเมลฉบับที่ 5: <em>Phishing, ปกติ หรือไม่แน่ใจ?</em></h2>
+
+    </div>
+    <div class="em  reveal" style="--d:0.12s"><div class="em-bar"><span>กล่องจดหมาย (Inbox)</span><i></i></div><div class="em-ext">[ภายนอก] อีเมลนี้ส่งมาจากภายนอกองค์กร โปรดระวังลิงก์และไฟล์แนบ</div><div class="em-sub">RE: ใบแจ้งหนี้ INV-2569-1187 – แจ้งเปลี่ยนบัญชีรับชำระเงิน</div><div class="em-from"><span class="av">PO</span><div><b>Somsri K. – Accounts Receivable</b> <span class="addr">&lt;ar@prime-office-supply.co.th&gt;</span><small>ถึง: คุณ &nbsp; • &nbsp; พฤ. 03/12/2569 11:20</small></div></div><div class="em-body"><p>เรียน ฝ่ายบัญชี</p><p>อ้างถึงใบแจ้งหนี้ INV-2569-1187 ที่ส่งให้เมื่อสัปดาห์ก่อน บริษัทฯ ขอแจ้งเปลี่ยนบัญชีธนาคารสำหรับรับชำระเงิน เนื่องจากบัญชีเดิมอยู่ระหว่างการตรวจสอบ รายละเอียดบัญชีใหม่ตามไฟล์แนบ</p><p>รบกวนชำระภายในสิ้นเดือนนี้ ขอบคุณค่ะ</p><span class="em-att">📎 แจ้งเปลี่ยนบัญชี_PrimeOffice.pdf</span></div></div>
+    <div class="ask reveal" style="--d:.3s"><h3>คุณคิดว่าเป็น…</h3><div class="opts"><span class="o bad">Phishing</span><span class="o ok">อีเมลปกติ</span><span class="o un">ไม่แน่ใจ</span></div><p class="hint">ดู: ผู้ส่ง • หัวเรื่อง • ลิงก์<br>ไฟล์แนบ • สิ่งที่ขอ</p></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 53 EMAIL 5 · ANSWER ============ -->
+<section class="slide v3-mail">
+    <div class="top"><b>06</b> Phishing Workshop · Email 5/6</div>
+    <div class="frame">
+        <h2 class="reveal">เฉลยฉบับที่ 5</h2>
+
+    </div>
+    <div class="em un reveal" style="--d:0.12s"><div class="em-bar"><span>กล่องจดหมาย (Inbox)</span><i></i></div><div class="em-ext">[ภายนอก] อีเมลนี้ส่งมาจากภายนอกองค์กร โปรดระวังลิงก์และไฟล์แนบ</div><div class="em-sub">RE: ใบแจ้งหนี้ INV-2569-1187 – แจ้งเปลี่ยนบัญชีรับชำระเงิน</div><div class="em-from"><span class="av">PO</span><div><b>Somsri K. – Accounts Receivable</b> <span class="addr">&lt;ar@prime-office-supply.co.th&gt;</span><span class="mk">1</span><small>ถึง: คุณ &nbsp; • &nbsp; พฤ. 03/12/2569 11:20</small></div></div><div class="em-body"><p>เรียน ฝ่ายบัญชี</p><p>อ้างถึงใบแจ้งหนี้ INV-2569-1187 ที่ส่งให้เมื่อสัปดาห์ก่อน บริษัทฯ ขอแจ้งเปลี่ยนบัญชีธนาคารสำหรับรับชำระเงิน เนื่องจากบัญชีเดิมอยู่ระหว่างการตรวจสอบ<span class="mk">2</span> รายละเอียดบัญชีใหม่ตามไฟล์แนบ</p><p>รบกวนชำระภายในสิ้นเดือนนี้ ขอบคุณค่ะ</p><span class="em-att">📎 แจ้งเปลี่ยนบัญชี_PrimeOffice.pdf<span class="mk">3</span></span></div></div>
+    <div class="ans un reveal" style="--d:.3s"><div class="verdict">ไม่แน่ใจ → ต้องตรวจสอบก่อน</div><ol class="pts"><li><b>1</b><span>เป็นคู่ค้าที่รู้จักและอ้างถึงใบแจ้งหนี้จริง แต่บัญชีอีเมลคู่ค้าอาจถูกแฮก</span></li><li><b>2</b><span>ขอเปลี่ยนเลขบัญชีรับเงิน ซึ่งเป็นรูปแบบหลักของ BEC</span></li><li><b>3</b><span>เลขบัญชีใหม่อยู่ในไฟล์แนบ ตรวจสอบจากอีเมลอย่างเดียวไม่ได้</span></li></ol><div class="todo"><b>ควรทำอย่างไร</b>โทรยืนยันกับผู้ติดต่อของคู่ค้า ด้วยเบอร์ที่มีในระบบเดิม (ไม่ใช่เบอร์ในอีเมล) และทำตามขั้นตอนอนุมัติการเปลี่ยนบัญชี</div></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 54 EMAIL 6 · QUESTION ============ -->
+<section class="slide v3-mail">
+    <div class="top"><b>06</b> Phishing Workshop · Email 6/6</div>
+    <div class="frame">
+        <h2 class="reveal">อีเมลฉบับที่ 6: <em>Phishing, ปกติ หรือไม่แน่ใจ?</em></h2>
+
+    </div>
+    <div class="em  reveal" style="--d:0.12s"><div class="em-bar"><span>กล่องจดหมาย (Inbox)</span><i></i></div><div class="em-ext">[ภายนอก] อีเมลนี้ส่งมาจากภายนอกองค์กร โปรดระวังลิงก์และไฟล์แนบ</div><div class="em-sub">คุณได้รับเอกสาร: สรุปการปรับเงินเดือนและโบนัส 2570.pdf</div><div class="em-from"><span class="av">DC</span><div><b>Document Center</b> <span class="addr">&lt;no-reply@sharepoint-docs365.com&gt;</span><small>ถึง: คุณ &nbsp; • &nbsp; ศ. 04/12/2569 17:58</small></div></div><div class="em-body"><p>มีผู้แชร์เอกสารถึงคุณ ลิงก์จะหมดอายุภายในวันนี้</p><p><b>📄 สรุปการปรับเงินเดือนและโบนัส 2570.pdf</b></p><p>เพื่อความปลอดภัย กรุณาสแกน QR Code ด้วยมือถือเพื่อเปิดเอกสาร และเข้าสู่ระบบด้วยบัญชีอีเมลบริษัท</p><div class="em-qr"><img src="assets/img/qr-email6.png" alt="QR Code"></div></div></div>
+    <div class="ask reveal" style="--d:.3s"><h3>คุณคิดว่าเป็น…</h3><div class="opts"><span class="o bad">Phishing</span><span class="o ok">อีเมลปกติ</span><span class="o un">ไม่แน่ใจ</span></div><p class="hint">ดู: ผู้ส่ง • หัวเรื่อง • ลิงก์<br>ไฟล์แนบ • สิ่งที่ขอ</p></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 55 EMAIL 6 · ANSWER ============ -->
+<section class="slide v3-mail">
+    <div class="top"><b>06</b> Phishing Workshop · Email 6/6</div>
+    <div class="frame">
+        <h2 class="reveal">เฉลยฉบับที่ 6</h2>
+
+    </div>
+    <div class="em bad reveal" style="--d:0.12s"><div class="em-bar"><span>กล่องจดหมาย (Inbox)</span><i></i></div><div class="em-ext">[ภายนอก] อีเมลนี้ส่งมาจากภายนอกองค์กร โปรดระวังลิงก์และไฟล์แนบ</div><div class="em-sub">คุณได้รับเอกสาร: สรุปการปรับเงินเดือนและโบนัส 2570.pdf</div><div class="em-from"><span class="av">DC</span><div><b>Document Center</b> <span class="addr">&lt;no-reply@sharepoint-docs365.com&gt;</span><span class="mk">1</span><small>ถึง: คุณ &nbsp; • &nbsp; ศ. 04/12/2569 17:58</small></div></div><div class="em-body"><p>มีผู้แชร์เอกสารถึงคุณ ลิงก์จะหมดอายุภายในวันนี้<span class="mk">4</span></p><p><b>📄 สรุปการปรับเงินเดือนและโบนัส 2570.pdf</b><span class="mk">2</span></p><p>เพื่อความปลอดภัย กรุณาสแกน QR Code ด้วยมือถือเพื่อเปิดเอกสาร และเข้าสู่ระบบด้วยบัญชีอีเมลบริษัท</p><div class="em-qr"><img src="assets/img/qr-email6.png" alt="QR Code"><span class="mk">3</span></div></div></div>
+    <div class="ans bad reveal" style="--d:.3s"><div class="verdict">Phishing</div><ol class="pts"><li><b>1</b><span>โดเมนเลียนแบบบริการแชร์ไฟล์ ไม่ใช่ระบบของบริษัท</span></li><li><b>2</b><span>ใช้เรื่องเงินเดือนและโบนัสล่อให้อยากรู้</span></li><li><b>3</b><span>ให้สแกน QR ด้วยมือถือ เพื่อหลบระบบป้องกันอีเมล แล้วขอให้ล็อกอิน</span></li><li><b>4</b><span>เร่งให้รีบเปิดเพราะลิงก์จะหมดอายุ</span></li></ol><div class="todo"><b>ควรทำอย่างไร</b>ไม่สแกน QR • เรื่องเงินเดือนให้ตรวจสอบกับฝ่ายทรัพยากรบุคคลโดยตรง • แจ้งฝ่าย IT/Security</div></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 56 STOP · CHECK · REPORT ============ -->
 <section class="slide">
-    <div class="top"><b>07</b> Incident Response</div>
+    <div class="top"><b>06</b> Phishing Workshop</div>
     <div class="frame">
-        <h2 class="reveal">สงสัยว่าถูกโจมตี ทำ <em>4 ขั้น</em> นี้ทันที</h2>
-        <div class="timeline">
-            <div class="tl reveal" style="--d:.10s"><div class="dot">1</div><span class="when">ทันที</span><h3>หยุดใช้งาน</h3><p>หยุดคลิก หยุดพิมพ์<br>ถ่ายภาพหน้าจอเก็บไว้</p></div>
-            <div class="tl reveal" style="--d:.20s"><div class="dot">2</div><span class="when">ภายใน 1 นาที</span><h3>ตัดการเชื่อมต่อ</h3><p>ปิด Wi-Fi ถอดสาย LAN<br>หรือเปิด Airplane Mode</p></div>
-            <div class="tl reveal" style="--d:.30s"><div class="dot">3</div><span class="when">ภายใน 5 นาที</span><h3>แจ้ง IT / Security</h3><p>เกิดอะไร เมื่อไหร่<br>พร้อมส่งหลักฐาน</p></div>
-            <div class="tl reveal" style="--d:.40s"><div class="dot">4</div><span class="when">ตามคำแนะนำ IT</span><h3>เปลี่ยนรหัสผ่าน</h3><p>อีเมล ระบบงาน<br>บัญชีที่เกี่ยวข้อง</p></div>
-        </div>
-        <div class="never reveal" style="--d:.55s">
-            <div class="lab">ห้ามทำเด็ดขาด</div>
-            <div><b>อย่าลบหลักฐาน</b>เก็บอีเมล ภาพหน้าจอ Log ไว้</div>
-            <div><b>อย่าจ่ายค่าไถ่</b>ไม่มีอะไรรับประกันว่าจะได้คืน</div>
-            <div><b>อย่าปกปิด</b>ยิ่งช้า ความเสียหายยิ่งมาก</div>
-            <div><b>อย่าแก้ไขเอง</b>รอผู้เชี่ยวชาญจัดการ</div>
-        </div>
+        <h2 class="reveal">ไม่แน่ใจ? <em>ให้ทำ 3 ขั้นตอนนี้</em></h2>
+        <div class="cards tall big3" style="--c:3"><div class="card warn reveal" style="--d:0.10s"><h3 class="">1. หยุด</h3><ul><li>ไม่คลิกลิงก์ ไม่สแกน QR</li><li>ไม่เปิดไฟล์แนบ</li><li>ไม่ตอบกลับ ไม่โอนเงิน</li></ul></div><div class="card un reveal" style="--d:0.20s"><h3 class="">2. ตรวจสอบ</h3><ul><li>ติดต่อผู้ส่งผ่านช่องทางอื่น</li><li>ใช้เบอร์หรืออีเมลที่รู้จักอยู่แล้ว</li><li>ไม่ใช้ข้อมูลติดต่อในอีเมลนั้น</li></ul></div><div class="card ok reveal" style="--d:0.30s"><h3 class="">3. รายงาน</h3><ul><li>แจ้งฝ่าย IT/Security</li><li><span class="ph">[ช่องทางรายงานของ BLA]</span></li><li>แล้วลบอีเมลตามคำแนะนำ</li></ul></div></div>
+        <div class="callout warn reveal" style="--d:0.45s">อย่าส่งต่ออีเมลน่าสงสัยให้เพื่อนช่วยดู เพราะอาจมีคนเผลอคลิก</div>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 29 REPORTING CHANNELS ============ -->
+<!-- ============ 57 OPENER 07 ============ -->
+<section data-shader="silk" class="slide v3-open">
+    <div class="top"><b>07</b> Case Studies &amp; Response</div>
+    <div class="opener-num pop">07</div>
+    <div class="opener-title"><h2 class="reveal" style="--d:0.10s">กรณีศึกษาและแนวทางปฏิบัติเมื่อพบหรือสงสัยว่าถูกโจมตี</h2><p class="reveal" style="--d:0.20s">เรียนรู้จากเหตุจริง • รู้ว่าต้องทำอะไร</p></div>
+    <div class="opener-ill pop" style="--d:0.25s"><img src="assets/img/ill-86.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 58 CASE 1 ============ -->
 <section class="slide">
-    <div class="top"><b>07</b> Incident Response</div>
+    <div class="top"><b>07</b> Case Studies &amp; Response</div>
     <div class="frame">
-        <h2 class="reveal">พบเหตุผิดปกติ <em>แจ้งทันที</em> ไม่ต้องรอให้แน่ใจ</h2>
-        <div class="chans">
-            <div class="chan reveal" style="--d:.10s"><span class="lbl">Email</span><b>security@______</b><p>ส่งรายละเอียดและหลักฐาน ถึงทีม IT / Security</p></div>
-            <div class="chan reveal" style="--d:.18s"><span class="lbl">Phone</span><b>IT Service Desk ต่อ ____</b><p>เหตุเร่งด่วน เช่น สงสัยติดมัลแวร์ หรือโอนเงินผิด</p></div>
-            <div class="chan reveal" style="--d:.26s"><span class="lbl">Report button</span><b>Report Phishing</b><p>ปุ่มในโปรแกรมอีเมล ส่งอีเมลต้องสงสัยให้ทีมตรวจสอบ</p></div>
-        </div>
-        <div class="defense reveal" style="--d:.4s">
-            <div class="lab">ต้องแจ้ง</div>
-            <div><b>เกิดอะไรขึ้น</b>เห็นอะไร คลิกหรือกรอกอะไรไป</div>
-            <div><b>เมื่อไหร่</b>วันและเวลาโดยประมาณ</div>
-            <div><b>เครื่อง / บัญชีไหน</b>อุปกรณ์และบัญชีที่เกี่ยวข้อง</div>
-            <div><b>หลักฐาน</b>ภาพหน้าจอ อีเมลต้นฉบับ</div>
-        </div>
+        <h2 class="reveal">กรณีศึกษา 1: <em>คลิกลิงก์ Phishing แค่ครั้งเดียว</em></h2>
+        <div class="chain"><div class="reveal " style="--d:0.10s"><small>01</small>ได้รับอีเมล “รหัสผ่านหมดอายุ”</div><i class="reveal">→</i><div class="reveal " style="--d:0.20s"><small>02</small>คลิกลิงก์ และกรอกรหัสผ่านในหน้าปลอม</div><i class="reveal">→</i><div class="reveal bad" style="--d:0.30s"><small>03</small>คนร้ายเข้าอีเมลได้ ตั้งกฎส่งต่ออีเมล</div><i class="reveal">→</i><div class="reveal bad" style="--d:0.40s"><small>04</small>ส่ง Phishing ต่อให้เพื่อนร่วมงานและลูกค้า</div><i class="reveal">→</i><div class="reveal bad" style="--d:0.50s"><small>05</small>เข้าถึงข้อมูลลูกค้า และเรียกค่าไถ่</div></div>
+        <div class="callout  reveal" style="--d:0.65s">ถ้ารู้ตัวว่าคลิกไปแล้ว <b>ให้แจ้ง IT ทันที</b> เปลี่ยนรหัสผ่านได้เร็ว ความเสียหายก็หยุดได้ตั้งแต่ขั้นที่ 2</div>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 30 TAKEAWAYS ============ -->
+<!-- ============ 59 CASE 2 ============ -->
+<section class="slide">
+    <div class="top"><b>07</b> Case Studies &amp; Response</div>
+    <div class="frame withill w">
+        <h2 class="reveal">กรณีศึกษา 2: <span class="en">Ransomware</span> <em>ล็อกไฟล์ทั้งองค์กร</em></h2>
+        <div class="kpi row reveal" style="--d:0.10s"><b>39%</b><span>ของเหตุ Breach เป็น Ransomware (เพิ่มจาก 34%)</span></div>
+        <ul class="blist tight"><li class="reveal" style="--d:0.20s"><span><b>อาการ:</b> ไฟล์เปิดไม่ได้ นามสกุลเปลี่ยน มีไฟล์ข้อความเรียกค่าไถ่</span></li><li class="reveal" style="--d:0.28s"><span><b>ผลกระทบ:</b> ระบบหยุด ข้อมูลลูกค้าถูกขโมยไปขู่เผยแพร่</span></li><li class="reveal" style="--d:0.36s"><span><b>สิ่งที่ช่วยได้:</b> Backup ที่แยกไว้ อัปเดตระบบ และรายงานให้เร็ว</span></li></ul>
+        <p class="v3src reveal" style="--d:0.50s">ที่มา: IBM Cost of a Data Breach Report 2026</p>
+    </div>
+    <div class="ill land pop" style="--d:0.20s"><img src="assets/img/ill-91.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 60 CASE 3 ============ -->
+<section class="slide">
+    <div class="top"><b>07</b> Case Studies &amp; Response</div>
+    <div class="frame">
+        <h2 class="reveal">กรณีศึกษา 3: <em>ปลอมเป็นผู้บริหาร สั่งโอนเงิน</em></h2>
+        <div class="kpis k3"><div class="kpi reveal" style="--d:0.10s"><b>43.9 ล้านบาท</b><span>บริษัทย่านทองหล่อ</span></div><div class="kpi reveal" style="--d:0.18s"><b>41 ล้านบาท</b><span>บริษัทใน อ.ปลวกแดง จ.ระยอง</span></div><div class="kpi reveal" style="--d:0.26s"><b>8.8 ล้านบาท+</b><span>อีกหนึ่งคดีในเดือนเดียวกัน</span></div></div>
+        <div class="pattern reveal" style="--d:0.35s"><b>รูปแบบที่ใช้ซ้ำ ๆ</b><span>อ้างเป็นผู้บริหาร</span><span>เร่งให้โอนวันนี้</span><span>ขอให้เก็บเป็นความลับ</span><span>ให้โอนเข้าบัญชีใหม่</span></div>
+        <div class="callout  reveal" style="--d:0.45s"><b>กฎ:</b> คำสั่งโอนเงินทุกครั้ง ต้องยืนยันผ่านช่องทางที่สอง และผ่านขั้นตอนอนุมัติปกติ</div>
+        <p class="v3src reveal" style="--d:0.55s">ที่มา: ศูนย์ ACSC สตช. ผ่านเดลินิวส์และไทยโพสต์ (25 พ.ค. 2569)</p>
+    </div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 61 FIRST 4 STEPS ============ -->
+<section class="slide">
+    <div class="top"><b>07</b> Case Studies &amp; Response</div>
+    <div class="frame">
+        <h2 class="reveal">เมื่อพบหรือสงสัยว่าถูกโจมตี: <em>4 ขั้นตอนแรก</em></h2>
+        <div class="steps v3steps"><div class="step reveal" style="--d:0.10s"><b>1</b><h3>หยุด</h3><p>หยุดใช้งานเครื่องและบัญชีที่สงสัย ไม่ทำอะไรต่อ</p></div><div class="step reveal" style="--d:0.20s"><b>2</b><h3>ตัดการเชื่อมต่อ</h3><p>ถอดสาย LAN / ปิด Wi-Fi แต่ไม่ต้องปิดเครื่อง</p></div><div class="step reveal" style="--d:0.30s"><b>3</b><h3>ไม่ลบหลักฐาน</h3><p>ไม่ลบอีเมล ไฟล์ หรือข้อความ ถ่ายภาพหน้าจอไว้</p></div><div class="step reveal" style="--d:0.40s"><b>4</b><h3>แจ้งทันที</h3><p>แจ้งฝ่าย IT/Security ให้เร็วที่สุด แม้ไม่แน่ใจ</p></div></div>
+    </div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 62 REPORTING CHANNELS ============ -->
+<section class="slide">
+    <div class="top"><b>07</b> Case Studies &amp; Response</div>
+    <div class="frame">
+        <h2 class="reveal">ช่องทาง<em>การรายงานเหตุ</em></h2>
+        <div class="report">
+            <div class="card reveal" style="--d:0.10s"><span class="n">ภายในบริษัท</span><ul><li><b>ปุ่ม Report Phishing</b></li><li>อีเมล: <span class="ph">[อีเมลแจ้งเหตุของ BLA]</span></li><li>โทร: <span class="ph">[เบอร์ IT Service Desk]</span></li><li>ติดต่อ: <span class="ph">[ทีม IT Security / ผู้รับผิดชอบ]</span></li></ul></div>
+            <div class="card reveal" style="--d:0.20s"><span class="n">ภัยส่วนตัว (หลอกโอนเงิน)</span><div class="hot"><div><b>สายด่วน 1441</b><span>ศูนย์ AOC ระงับบัญชีม้า</span></div><div><b>thaipoliceonline.go.th</b><span>แจ้งความออนไลน์</span></div><div><b>Call Center ธนาคาร</b><span>อายัดบัญชีหรือบัตรทันที</span></div></div></div>
+        </div>
+    </div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
+</section>
+
+<!-- ============ 63 SUMMARY ============ -->
 <section class="slide">
     <div class="top">Takeaways</div>
     <div class="frame">
-        <h2 class="reveal"><span class="en">4</span> นิสัยที่ปกป้องทั้งตัวเราและองค์กร</h2>
-        <div class="steps">
-            <div class="step reveal" style="--d:.10s"><b>01</b><h3>คิดก่อนคลิก</h3><p>ตรวจผู้ส่ง ลิงก์ และไฟล์แนบทุกครั้ง</p></div>
-            <div class="step reveal" style="--d:.18s"><b>02</b><h3>เปิด MFA</h3><p>และไม่กดอนุมัติคำขอที่ไม่ได้ทำเอง</p></div>
-            <div class="step reveal" style="--d:.26s"><b>03</b><h3>ใช้ AI อย่างระวัง</h3><p>ไม่ใส่ข้อมูลลูกค้าในเครื่องมือที่ไม่ได้รับอนุญาต</p></div>
-            <div class="step reveal" style="--d:.34s"><b>04</b><h3>รายงานทันที</h3><p>พบสิ่งผิดปกติ แจ้ง IT ทันที อย่ารอ</p></div>
-        </div>
+        <h2 class="reveal">สรุป: <em>7 สิ่งที่ต้องจำ</em></h2>
+        <ol class="goals"><li class="reveal" style="--d:0.08s"><span>01</span>รหัสผ่านยาว ไม่ซ้ำ และเปิด MFA</li><li class="reveal" style="--d:0.13s"><span>02</span>อัปเดตเครื่อง ล็อกจอ โต๊ะสะอาด</li><li class="reveal" style="--d:0.18s"><span>03</span>ไม่ใส่ข้อมูลลูกค้าใน AI ที่ไม่ได้อนุญาต</li><li class="reveal" style="--d:0.23s"><span>04</span>คำสั่งโอนเงิน ยืนยันอีกช่องทางเสมอ</li><li class="reveal" style="--d:0.28s"><span>05</span>ติดตั้งแอปจากแหล่งทางการเท่านั้น</li><li class="reveal" style="--d:0.33s"><span>06</span>เช็ก ผู้ส่ง • ลิงก์ • ไฟล์แนบ • สิ่งที่ขอ</li><li class="reveal" style="--d:0.38s"><span>07</span>สงสัย = หยุด ตรวจสอบ รายงาน</li></ol>
     </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 31 POST-TEST ============ -->
-<section data-shader="silk" class="slide s-test">
-    <div class="top">Wrap-up · 11.55</div>
-    <h1 class="reveal" style="--d:.1s">Post<span>-</span>test</h1>
-    <div class="th reveal" style="--d:.2s">ทดสอบหลังอบรม &amp; แบบประเมิน</div>
-    <div class="sub reveal" style="--d:.3s">ทุกความเห็นช่วยให้หลักสูตรครั้งต่อไปดีขึ้น</div>
-    <div class="how reveal" style="--d:.4s"><span><b>1</b>Post-test</span><em>→</em><span><b>2</b>แบบประเมิน</span><em>→</em><span><b>3</b>กดส่ง</span></div>
-    <div class="qr pop" style="--d:.3s">QR Code<br>Post-test &amp; แบบประเมิน</div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+<!-- ============ 64 POST-TEST & EVALUATION ============ -->
+<section data-shader="silk" class="slide">
+    <div class="top">Wrap-up</div>
+    <div class="frame">
+        <h2 class="reveal">แบบทดสอบหลังอบรม (Post-test) <em>และแบบประเมิน</em></h2>
+        <div class="qrs"><figure class="pop" style="--d:0.20s"><div class="qrimg"><img src="assets/img/qr-posttest.png" alt="QR Code Post-test"></div><figcaption>Post-test</figcaption></figure><figure class="pop" style="--d:0.32s"><div class="qrimg"><img src="assets/img/qr-eval.png" alt="QR Code แบบประเมินการอบรม"></div><figcaption>แบบประเมินการอบรม</figcaption></figure></div>
+    </div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
-<!-- ============ 32 CLOSING ============ -->
+<!-- ============ 65 CLOSING ============ -->
 <section data-shader class="slide s-close">
-    <div class="ring pop" style="--d:.15s"></div>
     <div class="top">Thank you</div>
-    <h1 class="reveal" style="--d:.1s">ขอบคุณ<span>.</span></h1>
-    <div class="q reveal" style="--d:.25s">Questions?</div>
-    <div class="refs reveal" style="--d:.4s">
-        <b>Presented by</b>
-        <span class="lockup lockup-close"><img src="assets/alphasec-mark.png" alt="AlphaSec logo"><span>ALPHASEC</span></span>
-    </div>
-    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · CYBERSECURITY AWARENESS 2569</span><span class="pg"></span></div>
+    <h1 class="reveal" style="--d:0.10s">ขอบคุณครับ<span>.</span></h1>
+    <div class="q reveal" style="--d:0.25s">ถาม – ตอบ (Q&amp;A)</div>
+    <div class="refs reveal" style="--d:0.40s"><b>คณิตสรณ์ ธรณ์ธนากุล</b><span class="lockup lockup-close"><img src="assets/alphasec-mark.png" alt="AlphaSec logo"><span>ALPHASEC Co., Ltd.</span></span></div>
+    <div class="opener-ill close pop" style="--d:0.25s"><img src="assets/img/ill-103.jpg" alt=""></div>
+    <div class="foot"><span class="fbrand"><img src="assets/alphasec-mark.png" alt="">ALPHASEC · PHISHING AWARENESS &amp; CYBERSECURITY ESSENTIALS 2026</span><span class="pg"></span></div>
 </section>
 
 </main>
@@ -1468,6 +1922,7 @@ const Motion = {
     splitHeadings() {
         if (!('Segmenter' in Intl)) return;
         const seg = new Intl.Segmenter('th', { granularity: 'grapheme' });
+        const words = new Intl.Segmenter('th', { granularity: 'word' });
         document.querySelectorAll('.slide h1, .slide h2, .statement').forEach((el) => {
             if (el.dataset.split) return;
             let i = 0;
@@ -1475,13 +1930,19 @@ const Motion = {
                 [...node.childNodes].forEach((n) => {
                     if (n.nodeType === Node.TEXT_NODE) {
                         const frag = document.createDocumentFragment();
-                        for (const { segment } of seg.segment(n.data)) {
-                            if (/\s/.test(segment)) { frag.append(segment); continue; }
-                            const span = document.createElement('span');
-                            span.className = 'ch';
-                            span.style.setProperty('--i', i++);
-                            span.textContent = segment;
-                            frag.append(span);
+                        // Group graphemes by word so Thai lines only break between words
+                        for (const { segment: word } of words.segment(n.data)) {
+                            if (/^\s+$/.test(word)) { frag.append(word); continue; }
+                            const w = document.createElement('span');
+                            w.className = 'wd';
+                            for (const { segment } of seg.segment(word)) {
+                                const span = document.createElement('span');
+                                span.className = 'ch';
+                                span.style.setProperty('--i', i++);
+                                span.textContent = segment;
+                                w.append(span);
+                            }
+                            frag.append(w);
                         }
                         n.replaceWith(frag);
                     } else if (n.nodeType === Node.ELEMENT_NODE && n.tagName !== 'BR') {
@@ -1497,7 +1958,7 @@ const Motion = {
     /* --- Count-up: animate the first number in each stat --- */
     prepareCounters() {
         this.counters = [];
-        document.querySelectorAll('.stat b, .threat .k b, .penalty b').forEach((el) => {
+        document.querySelectorAll('.stat b, .threat .k b, .penalty b, .kpi b').forEach((el) => {
             if (el.closest('[data-nocount]')) return;   // keep labels like "04" as written
             const tn = el.firstChild;
             if (!tn || tn.nodeType !== Node.TEXT_NODE) return;
@@ -1525,7 +1986,7 @@ const Motion = {
 
     /* --- Spotlight: cards glow where the cursor is --- */
     setupSpotlight() {
-        const sel = '.threat, .step, .tactic, .rf, .right, .check, .tl, .flag, .col, .agenda li, .rows li, .side-stats .stat, .opener-stats .stat, .rung, .goals li, .impacts li, .case, .mini, .chan';
+        const sel = '.threat, .step, .tactic, .rf, .right, .check, .tl, .flag, .col, .agenda li, .rows li, .side-stats .stat, .opener-stats .stat, .rung, .goals li, .impacts li, .case, .mini, .chan, .card, .kpi, .dom, .urlbox, .node';
         document.querySelectorAll(sel).forEach((el) => el.classList.add('spot'));
         const stage = document.getElementById('deckStage');
         document.addEventListener('pointermove', (e) => {
@@ -1706,7 +2167,7 @@ void main(){
    =========================================== */
 const editor = {
     isActive: false,
-    key: 'alphasec-awareness-2569-outline2026-edits',
+    key: 'alphasec-awareness-2026-v3-edits',
     targets() { return document.querySelectorAll('.slide h1, .slide h2, .slide h3, .slide h4, .slide p, .slide li, .slide q, .slide b, .slide span, .slide code, .statement, .th, .sub, .q, .refs, .mail .body'); },
     toggleEditMode() {
         this.isActive = !this.isActive;
@@ -1723,8 +2184,8 @@ const editor = {
             // Store a clean copy: no live shader canvas, counters at their final values
             const copy = this.stage().cloneNode(true);
             copy.querySelectorAll('.shader').forEach((c) => c.remove());
-            const live = this.stage().querySelectorAll('.stat b, .threat .k b, .penalty b');
-            copy.querySelectorAll('.stat b, .threat .k b, .penalty b').forEach((el, i) => {
+            const live = this.stage().querySelectorAll('.stat b, .threat .k b, .penalty b, .kpi b');
+            copy.querySelectorAll('.stat b, .threat .k b, .penalty b, .kpi b').forEach((el, i) => {
                 const c = Motion.counters.find((x) => x.el === live[i]);
                 if (c && el.firstChild) el.firstChild.data = c.pre + (c.comma ? c.num.toLocaleString('en-US') : c.num.toFixed(c.dec)) + c.post;
             });
